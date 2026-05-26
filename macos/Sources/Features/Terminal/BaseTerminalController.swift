@@ -860,9 +860,23 @@ class BaseTerminalController: NSWindowController,
     private func applyTitleToWindow() {
         guard let window else { return }
 
-        if let titleOverride {
+        if let titleOverride, !titleOverride.isEmpty {
+            // 把用户自定义标签作为前缀拼到 shell 动态标题前。
+            // 需要先把 lastComputedTitle 里 computeTitle 加的铃声 "🔔 " 剥掉，
+            // 避免拼出 "客户演示 · 🔔 mac@host"（铃声跑到中间），
+            // 拼完再统一交给 computeTitle 把铃声加回最前面。
+            let bellPrefix = "🔔 "
+            let shellTitle: String = lastComputedTitle.hasPrefix(bellPrefix)
+                ? String(lastComputedTitle.dropFirst(bellPrefix.count))
+                : lastComputedTitle
+
+            // shell 标题还没到位（启动初是 👻 或空）时，只显示用户输入即可
+            let combined: String = (shellTitle.isEmpty || shellTitle == "👻")
+                ? titleOverride
+                : "\(titleOverride) · \(shellTitle)"
+
             window.title = computeTitle(
-                title: titleOverride,
+                title: combined,
                 bell: focusedSurface?.bell ?? false)
             return
         }
