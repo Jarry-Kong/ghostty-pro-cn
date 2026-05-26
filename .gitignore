@@ -1,0 +1,39 @@
+*~
+.*.swp
+.swp
+*.log
+.DS_Store
+.vscode/
+.direnv/
+.envrc.local
+.flatpak-builder/
+zig-cache/
+.zig-cache/
+zig-out/
+build-cmake/
+CMakeCache.txt
+CMakeFiles/
+/build.zig.zon.bak
+/result*
+/.nixos-test-history
+example/*.wasm
+test/ghostty
+test/cases/**/*.actual.png
+flatpak/builddir/
+flatpak/repo/
+
+glad.zip
+/Box_test.ppm
+/Box_test_diff.ppm
+/ghostty.qcow2
+
+vgcore.*
+
+# ===== Ghostty Pro 中文版二开追加的忽略 =====
+# Xcode 编译产物（约 3.4 GB），永远不该入库
+macos/build/
+# Zig 编译生成的 xcframework（几百 MB），可通过 build-pro-cn.sh 重新生成
+macos/GhosttyKit.xcframework/
+# 通用排除
+**/.DS_Store
+*.zip
