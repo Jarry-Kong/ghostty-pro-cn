@@ -37,3 +37,7 @@ macos/GhosttyKit.xcframework/
 # 通用排除
 **/.DS_Store
 *.zip
+# 编译时产生的性能采样文件（Xcode/clang 生成的垃圾，无需入库）
+*.profraw
+# 打包产出的安装包目录（成品自行分发，不入库）
+/安装包/
