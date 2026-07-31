@@ -363,6 +363,13 @@ fn drainMailbox(self: *Thread) !void {
                 // If we became visible then we immediately rebuild cells
                 // (renderCallback skips updateFrame while invisible) and draw.
                 if (v) {
+                    // 窗口从隐藏切回可见时，必须强制标记整屏脏。
+                    // 因为窗口隐藏期间画面没有任何变化，所有 cells 的 dirty 标记都是 false，
+                    // 直接调 updateFrame() 只会做 partial rebuild —— scrollback 行因为
+                    // 没被标记为脏不会被重画，结果就是切回窗口后顶部一大片空白。
+                    // 这里先 markDirty() 把整屏标记为 dirty=.full，updateFrame 才会
+                    // 走完整 rebuild 路径，把所有可见区域真正重画一遍。
+                    self.renderer.markDirty();
                     self.renderer.updateFrame(
                         self.state,
                         self.flags.cursor_blink_visible,
