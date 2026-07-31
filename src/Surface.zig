@@ -5620,6 +5620,20 @@ pub fn performBindingAction(self: *Surface, action: input.Binding.Action) !bool 
             {},
         ),
 
+        // 用户主动按下"刷新"快捷键 / 右键菜单时，触发真正的全链路重排重渲：
+        //   1) 重建字体栈（font stack）
+        //   2) 重算 cell 像素尺寸 + 重算 padding
+        //   3) 把新尺寸 mail 给 IO 线程（pty 会收到 SIGWINCH）
+        //   4) 通知 renderer 换 font grid（renderer 会重建 atlas 并重画）
+        //   5) 通知 window 更新 cell_size
+        // 用当前 font_size 再调一次 setFontSize，是因为它内部没有"尺寸没变就跳过"
+        // 的 early return，每次调用都会强制走完完整重排链路 —— 这才是用户期望的
+        // "按现在的字体和屏幕参数重画一遍"。
+        .redraw => {
+            try self.setFontSize(self.font_size);
+            return true;
+        },
+
         .toggle_maximize => return try self.rt_app.performAction(
             .{ .surface = self },
             .toggle_maximize,

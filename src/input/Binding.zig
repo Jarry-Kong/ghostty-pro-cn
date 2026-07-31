@@ -668,6 +668,13 @@ pub const Action = union(enum) {
     /// Only implemented on macOS.
     reset_window_size,
 
+    /// 强制重绘当前画面（不清屏、不丢内容、不重启）。
+    ///
+    /// 适用场景：改字体大小后字符没对齐、把窗口拖到不同 DPI 的显示屏后
+    /// 出现错位等"画面与当前 grid 尺寸 / 屏幕缩放不一致"的情况——
+    /// 按一下就让画面按最新的字体和屏幕参数重新画一遍。
+    redraw,
+
     /// Control the visibility of the terminal inspector.
     ///
     /// Valid arguments: `toggle`, `show`, `hide`.
@@ -1400,6 +1407,7 @@ pub const Action = union(enum) {
             .toggle_background_opacity,
             .show_on_screen_keyboard,
             .reset_window_size,
+            .redraw,
             .activate_key_table,
             .activate_key_table_once,
             .deactivate_key_table,

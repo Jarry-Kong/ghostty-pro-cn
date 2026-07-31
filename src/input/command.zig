@@ -543,6 +543,12 @@ fn actionCommands(action: Action.Key) []const Command {
             .description = "Reset the window size to the default.",
         }},
 
+        .redraw => comptime &.{.{
+            .action = .redraw,
+            .title = "Refresh Display",
+            .description = "Force a redraw of the current surface (preserves contents).",
+        }},
+
         .inspector => comptime &.{.{
             .action = .{ .inspector = .toggle },
             .title = "Toggle Inspector",

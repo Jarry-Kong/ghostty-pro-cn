@@ -6527,6 +6527,14 @@ pub const Keybinds = struct {
             .{ .reset_font_size = {} },
         );
 
+        // ⌘+⇧+R（macOS）/ Ctrl+Shift+R（Linux/Windows）：刷新当前画面
+        // 解决改字体大小、跨显示屏拖拽后画面错位的问题，强制按最新参数重绘
+        try self.set.put(
+            alloc,
+            .{ .key = .{ .unicode = 'r' }, .mods = inputpkg.ctrlOrSuper(.{ .shift = true }) },
+            .{ .redraw = {} },
+        );
+
         try self.set.put(
             alloc,
             .{ .key = .{ .unicode = 'j' }, .mods = .{ .shift = true, .ctrl = true, .super = true } },

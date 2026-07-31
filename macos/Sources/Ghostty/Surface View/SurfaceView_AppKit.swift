@@ -762,11 +762,34 @@ extension Ghostty {
             // the proper refresh rate is going.
             ghostty_surface_set_display_id(surface, screen.displayID ?? 0)
 
-            // We also just trigger a backing property change. Just in case the screen has
-            // a different scaling factor, this ensures that we update our content scale.
+            // A screen change can also mean a different backing scale factor
+            // (e.g. moving between a Retina and a non-Retina display), so we
+            // trigger a backing-properties update to refresh our content scale.
+            //
+            // We refresh twice: once immediately and once after a short delay.
+            // When a window moves across displays, AppKit may deliver this
+            // notification before `frame`/`backingScaleFactor` have settled on
+            // the destination display, so the immediate refresh can run with
+            // stale scale data. libghostty then sees "no change" in content
+            // scale and framebuffer size and skips the rebuild, leaving the
+            // surface rendered at the wrong scale (garbled/blank) until the
+            // next user interaction. The delayed refresh runs after the values
+            // have settled and forces the correct rebuild + redraw.
+            //
             // Issue: https://github.com/ghostty-org/ghostty/issues/2731
+            //        https://github.com/ghostty-org/ghostty/issues/8844
             DispatchQueue.main.async { [weak self] in
                 self?.viewDidChangeBackingProperties()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+                guard let self else { return }
+                self.viewDidChangeBackingProperties()
+
+                // Force a draw so the corrected scale is presented even if the
+                // refresh above didn't trigger one on its own.
+                if let surface = self.surface {
+                    ghostty_surface_draw(surface)
+                }
             }
         }
 
@@ -1550,34 +1573,37 @@ extension Ghostty {
             // in a row without storing it all.
             var item: NSMenuItem
 
-            // If we have a selection, add copy
+            // 有选中文本时才显示"复制"
             if let text = self.accessibilitySelectedText(), text.count > 0 {
-                menu.addItem(withTitle: "Copy", action: #selector(copy(_:)), keyEquivalent: "")
+                menu.addItem(withTitle: "复制", action: #selector(copy(_:)), keyEquivalent: "")
             }
-            menu.addItem(withTitle: "Paste", action: #selector(paste(_:)), keyEquivalent: "")
+            menu.addItem(withTitle: "粘贴", action: #selector(paste(_:)), keyEquivalent: "")
 
             menu.addItem(.separator())
-            item = menu.addItem(withTitle: "Split Right", action: #selector(splitRight(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "向右拆分", action: #selector(splitRight(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "rectangle.righthalf.inset.filled")
-            item = menu.addItem(withTitle: "Split Left", action: #selector(splitLeft(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "向左拆分", action: #selector(splitLeft(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "rectangle.leadinghalf.inset.filled")
-            item = menu.addItem(withTitle: "Split Down", action: #selector(splitDown(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "向下拆分", action: #selector(splitDown(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "rectangle.bottomhalf.inset.filled")
-            item = menu.addItem(withTitle: "Split Up", action: #selector(splitUp(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "向上拆分", action: #selector(splitUp(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "rectangle.tophalf.inset.filled")
 
             menu.addItem(.separator())
-            item = menu.addItem(withTitle: "Reset Terminal", action: #selector(resetTerminal(_:)), keyEquivalent: "")
+            // 刷新画面：强制重绘当前 surface（不清屏、不丢内容）
+            item = menu.addItem(withTitle: "刷新画面", action: #selector(refreshTerminal(_:)), keyEquivalent: "")
+            item.setImageIfDesired(systemSymbolName: "arrow.clockwise")
+            item = menu.addItem(withTitle: "重置终端", action: #selector(resetTerminal(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "arrow.trianglehead.2.clockwise")
-            item = menu.addItem(withTitle: "Toggle Terminal Inspector", action: #selector(toggleTerminalInspector(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "终端检查器", action: #selector(toggleTerminalInspector(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "scope")
-            item = menu.addItem(withTitle: "Terminal Read-only", action: #selector(toggleReadonly(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "只读模式", action: #selector(toggleReadonly(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "eye.fill")
             item.state = readonly ? .on : .off
             menu.addItem(.separator())
-            item = menu.addItem(withTitle: "Change Tab Title...", action: #selector(BaseTerminalController.changeTabTitle(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "修改标签页标题…", action: #selector(BaseTerminalController.changeTabTitle(_:)), keyEquivalent: "")
             item.setImageIfDesired(systemSymbolName: "pencil.line")
-            item = menu.addItem(withTitle: "Change Terminal Title...", action: #selector(changeTitle(_:)), keyEquivalent: "")
+            item = menu.addItem(withTitle: "修改终端标题…", action: #selector(changeTitle(_:)), keyEquivalent: "")
 
             return menu
         }
@@ -1667,6 +1693,16 @@ extension Ghostty {
         @IBAction func toggleReadonly(_ sender: Any?) {
             guard let surface = self.surface else { return }
             let action = "toggle_readonly"
+            if !ghostty_surface_binding_action(surface, action, UInt(action.lengthOfBytes(using: .utf8))) {
+                AppDelegate.logger.warning("action failed action=\(action)")
+            }
+        }
+
+        // 右键菜单"刷新画面"和 ⌘⇧R 快捷键的处理：让 surface 按最新字体大小
+        // 和屏幕缩放强制重画一次，解决字体变化 / 跨屏拖拽后画面错位的问题。
+        @IBAction func refreshTerminal(_ sender: Any?) {
+            guard let surface = self.surface else { return }
+            let action = "redraw"
             if !ghostty_surface_binding_action(surface, action, UInt(action.lengthOfBytes(using: .utf8))) {
                 AppDelegate.logger.warning("action failed action=\(action)")
             }
