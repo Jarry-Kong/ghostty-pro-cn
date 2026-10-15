@@ -1,0 +1,167 @@
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/App/macOS/AppDelegate+Ghostty.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/App/macOS/AppDelegate.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/App/macOS/main.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/About/AboutController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/About/AboutView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/About/AboutViewModel.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/About/CyclingIconView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/CloseTerminalIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/CommandPaletteIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/Entities/CommandEntity.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/Entities/TerminalEntity.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/FocusTerminalIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/GetTerminalDetailsIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/GhosttyIntentError.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/InputIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/IntentPermission.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/KeybindIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/NewTerminalIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/App Intents/QuickTerminalIntent.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/AppDelegate+AppleScript.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/Ghostty.Input.Mods+AppleScript.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptInputTextCommand.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptKeyEventCommand.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptMouseButtonCommand.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptMousePosCommand.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptMouseScrollCommand.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptRecord.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptSurfaceConfiguration.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptTab.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptTerminal.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/AppleScript/ScriptWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/ClipboardConfirmation/ClipboardConfirmationController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/ClipboardConfirmation/ClipboardConfirmationView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Command Palette/CommandPalette.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Command Palette/TerminalCommandPalette.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Custom App Icon/AppIcon.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Custom App Icon/ColorizedGhosttyIcon.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Custom App Icon/ColorizedGhosttyIconImage.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Custom App Icon/Extensions/UserDefaults+AppIcon.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Global Keybinds/GlobalEventTap.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalPosition.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalRestorableState.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalScreen.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalScreenStateCache.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalSize.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalSpaceBehavior.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/QuickTerminal/QuickTerminalWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInput.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Services/ServiceProvider.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/SessionLibrary/SessionLibraryScanner.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/SessionLibrary/SessionLibraryView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/SessionLibrary/SessionLibraryWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/SessionLibrary/SessionOpener.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/SessionLibrary/SessionRecord.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/SessionLibrary/SessionRenamer.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Settings/ConfigurationErrorsController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Settings/ConfigurationErrorsView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Splits/SplitTree.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Splits/SplitView.Divider.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Splits/SplitView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Splits/TerminalSplitTreeView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/BaseTerminalController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/ErrorView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/TerminalController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/TerminalRestorable.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/TerminalRestorableState+InteralState.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/TerminalTabColor.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/TerminalView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/TerminalViewContainer.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/Window Styles/HiddenTitlebarTerminalWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/Window Styles/TerminalWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/Window Styles/TitlebarTabsTahoeTerminalWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/Window Styles/TitlebarTabsVenturaTerminalWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Terminal/Window Styles/TransparentTitlebarTerminalWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdateBadge.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdateController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdateDelegate.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdateDriver.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdatePill.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdatePopoverView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Update/UpdateViewModel.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/ClaudeSessionReader.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/ScriptRewriter.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/SegmentedSpeechPlayer.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/SpeechPlayer.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/SpeechTextCleaner.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/TTSClient.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceController.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceControllerRegistry.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceHistoryStore.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceNetwork.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceOverlay.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceSegment.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceSettings.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceSettingsWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceSynthesisPipeline.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Voice/VoiceTranscriptWindow.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/FullscreenMode+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Action.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.App.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.ChildExitedMessage.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Command.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Config.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.ConfigTypes.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Error.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Input.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Inspector.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.MenuShortcutManager.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Shell.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Ghostty.Surface.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/GhosttyPackage.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/NSEvent+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/ChildExitedMessageBar.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/InspectorView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/OSSurfaceView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceDragSource.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceGrabHandle.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceProgressBar.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceScrollView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceView+Image.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceView+Transferable.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Ghostty/Surface View/SurfaceView_AppKit.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/AnySortKey.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/AppInfo.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Backport.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/CodableBridge.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/CrossKit.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Cursor.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/ExpiringUndoManager.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/Array+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/Double+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/Duration+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/EventModifiers+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSAppearance+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSApplication+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSColor+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSImage+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSMenu+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSMenuItem+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSPasteboard+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSScreen+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSView+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSWindow+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/NSWorkspace+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/OSColor+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/OSPasteboard+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/ObjectIdentifier+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/Optional+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/String+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/Transferable+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/UUID+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/UndoManager+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Extensions/UserDefaults+Extension.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Fullscreen.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/KeyboardLayout.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/LastWindowPosition.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/NonDraggableHostingView.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/PermissionRequest.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Private/CGS.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Private/Dock.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/TabGroupCloseCoordinator.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/TabTitleEditor.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/URLHoverBanner.swift
+/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Helpers/Weak.swift

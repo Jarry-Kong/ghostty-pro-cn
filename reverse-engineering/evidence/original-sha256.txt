@@ -1,0 +1,3 @@
+0b51ba62ef7920818f17a6c963fb22ff24909f52bad985c8df410f62c917c363  Ghostty Pro 中文版 1.6.0 修复版.app/Contents/MacOS/ghostty
+ceed1799fe67767ee52743eff34bcce8e3966718f41835c056ca8fad4b5b331c  Ghostty Pro 中文版 1.6.0 修复版.app/Contents/Info.plist
+7acbf9da37f605af0058632b21f39383140a8a69bc414df707b1bd90002d74b2  Ghostty Pro 中文版 1.6.0 修复版.app/Contents/Resources/MainMenu.nib

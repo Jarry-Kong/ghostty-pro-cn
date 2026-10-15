@@ -5,6 +5,22 @@ import AppKit
 @Suite
 struct TerminalRestorableTests {
     @Test
+    func unchangedComputedTabTitleDoesNotBecomeAnOverride() {
+        #expect(normalizedTabTitleOverride(
+            editedTitle: "~",
+            currentOverride: nil,
+            displayedTitle: "~") == nil)
+        #expect(normalizedTabTitleOverride(
+            editedTitle: "项目",
+            currentOverride: nil,
+            displayedTitle: "~") == "项目")
+        #expect(normalizedTabTitleOverride(
+            editedTitle: "",
+            currentOverride: "项目",
+            displayedTitle: "项目 · ~") == nil)
+    }
+
+    @Test
     func areYouForgettingToAddMigrationTests() {
         #expect(TerminalRestorableState.version == 7)
         #expect(TerminalRestorableState.minimumVersion == 5)

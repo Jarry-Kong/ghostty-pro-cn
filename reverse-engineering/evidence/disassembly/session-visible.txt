@@ -1,0 +1,336 @@
+
+Ghostty Pro 中文版 1.6.0 修复版.app/Contents/MacOS/ghostty:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100089874 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg>:
+100089874: a9ba6ffc    	stp	x28, x27, [sp, #-0x60]!
+100089878: a90167fa    	stp	x26, x25, [sp, #0x10]
+10008987c: a9025ff8    	stp	x24, x23, [sp, #0x20]
+100089880: a90357f6    	stp	x22, x21, [sp, #0x30]
+100089884: a9044ff4    	stp	x20, x19, [sp, #0x40]
+100089888: a9057bfd    	stp	x29, x30, [sp, #0x50]
+10008988c: 910143fd    	add	x29, sp, #0x50
+100089890: d101c3ff    	sub	sp, sp, #0x70
+100089894: aa1403fb    	mov	x27, x20
+100089898: f81783b4    	stur	x20, [x29, #-0x88]
+10008989c: d2800000    	mov	x0, #0x0                ; =0
+1000898a0: 9400280c    	bl	0x1000938d0 <_$s7Ghostty13SessionRecordVMa>
+1000898a4: f81803a0    	stur	x0, [x29, #-0x80]
+1000898a8: f85f8018    	ldur	x24, [x0, #-0x8]
+1000898ac: f9402308    	ldr	x8, [x24, #0x40]
+1000898b0: aa0803e9    	mov	x9, x8
+1000898b4: 900075b0    	adrp	x16, 0x100f3d000 <_writev+0x100f3d000>
+1000898b8: f9425610    	ldr	x16, [x16, #0x4a8]
+1000898bc: d63f0200    	blr	x16
+1000898c0: 910003e9    	mov	x9, sp
+1000898c4: 91003d08    	add	x8, x8, #0xf
+1000898c8: 927ced08    	and	x8, x8, #0xfffffffffffffff0
+1000898cc: cb080137    	sub	x23, x9, x8
+1000898d0: 910002ff    	mov	sp, x23
+1000898d4: d2800000    	mov	x0, #0x0                ; =0
+1000898d8: 94224937    	bl	0x10091bdb4 <_writev+0x10091bdb4>
+1000898dc: f81503a0    	stur	x0, [x29, #-0xb0]
+1000898e0: f85f8008    	ldur	x8, [x0, #-0x8]
+1000898e4: f81703a8    	stur	x8, [x29, #-0x90]
+1000898e8: f9402108    	ldr	x8, [x8, #0x40]
+1000898ec: aa0803e9    	mov	x9, x8
+1000898f0: 900075b0    	adrp	x16, 0x100f3d000 <_writev+0x100f3d000>
+1000898f4: f9425610    	ldr	x16, [x16, #0x4a8]
+1000898f8: d63f0200    	blr	x16
+1000898fc: 910003e9    	mov	x9, sp
+100089900: 91003d0a    	add	x10, x8, #0xf
+100089904: 927ced4c    	and	x12, x10, #0xfffffffffffffff0
+100089908: cb0c0135    	sub	x21, x9, x12
+10008990c: 910002bf    	mov	sp, x21
+100089910: aa0803e9    	mov	x9, x8
+100089914: 900075b0    	adrp	x16, 0x100f3d000 <_writev+0x100f3d000>
+100089918: f9425610    	ldr	x16, [x16, #0x4a8]
+10008991c: d63f0200    	blr	x16
+100089920: 910003e8    	mov	x8, sp
+100089924: cb0c0113    	sub	x19, x8, x12
+100089928: 9100027f    	mov	sp, x19
+10008992c: d2800000    	mov	x0, #0x0                ; =0
+100089930: 942247e9    	bl	0x10091b8d4 <_writev+0x10091b8d4>
+100089934: f81683a0    	stur	x0, [x29, #-0x98]
+100089938: f85f8016    	ldur	x22, [x0, #-0x8]
+10008993c: f94022c8    	ldr	x8, [x22, #0x40]
+100089940: aa0803e9    	mov	x9, x8
+100089944: 900075b0    	adrp	x16, 0x100f3d000 <_writev+0x100f3d000>
+100089948: f9425610    	ldr	x16, [x16, #0x4a8]
+10008994c: d63f0200    	blr	x16
+100089950: 910003e9    	mov	x9, sp
+100089954: 91003d08    	add	x8, x8, #0xf
+100089958: 927ced08    	and	x8, x8, #0xfffffffffffffff0
+10008995c: cb08013a    	sub	x26, x9, x8
+100089960: 9100035f    	mov	sp, x26
+100089964: d0007888    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089968: f9436509    	ldr	x9, [x8, #0x6c8]
+10008996c: 91000529    	add	x9, x9, #0x1
+100089970: f9036509    	str	x9, [x8, #0x6c8]
+100089974: b0004bc0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+100089978: 9106a000    	add	x0, x0, #0x1a8
+10008997c: 94225928    	bl	0x10091fe1c <_writev+0x10091fe1c>
+100089980: aa0003f4    	mov	x20, x0
+100089984: b0004bc0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+100089988: 91074000    	add	x0, x0, #0x1d0
+10008998c: 94225924    	bl	0x10091fe1c <_writev+0x10091fe1c>
+100089990: aa0003f9    	mov	x25, x0
+100089994: d10183a8    	sub	x8, x29, #0x60
+100089998: aa1b03e0    	mov	x0, x27
+10008999c: aa1403e1    	mov	x1, x20
+1000899a0: aa1903e2    	mov	x2, x25
+1000899a4: 942249d0    	bl	0x10091c0e4 <_writev+0x10091c0e4>
+1000899a8: aa1403e0    	mov	x0, x20
+1000899ac: 94225967    	bl	0x10091ff48 <_writev+0x10091ff48>
+1000899b0: aa1903e0    	mov	x0, x25
+1000899b4: 94225965    	bl	0x10091ff48 <_writev+0x10091ff48>
+1000899b8: a97a6fa8    	ldp	x8, x27, [x29, #-0x60]
+1000899bc: a93a6fa8    	stp	x8, x27, [x29, #-0x60]
+1000899c0: aa1a03e8    	mov	x8, x26
+1000899c4: 942247be    	bl	0x10091b8bc <_writev+0x10091b8bc>
+1000899c8: 97fdec5e    	bl	0x100004b40 <_$sS2SSysWl>
+1000899cc: aa0003e2    	mov	x2, x0
+1000899d0: f00075a1    	adrp	x1, 0x100f40000 <_writev+0x100f40000>
+1000899d4: f940b821    	ldr	x1, [x1, #0x170]
+1000899d8: d10183b4    	sub	x20, x29, #0x60
+1000899dc: aa1a03e0    	mov	x0, x26
+1000899e0: f81603a2    	stur	x2, [x29, #-0xa0]
+1000899e4: 9422511f    	bl	0x10091de60 <_writev+0x10091de60>
+1000899e8: aa0003f4    	mov	x20, x0
+1000899ec: aa0103fc    	mov	x28, x1
+1000899f0: f94006c8    	ldr	x8, [x22, #0x8]
+1000899f4: aa1a03e0    	mov	x0, x26
+1000899f8: f85683a1    	ldur	x1, [x29, #-0x98]
+1000899fc: d63f0100    	blr	x8
+100089a00: aa1b03e0    	mov	x0, x27
+100089a04: 942258a6    	bl	0x10091fc9c <_writev+0x10091fc9c>
+100089a08: aa1403e0    	mov	x0, x20
+100089a0c: aa1c03e1    	mov	x1, x28
+100089a10: 94224f40    	bl	0x10091d710 <_writev+0x10091d710>
+100089a14: aa0003fa    	mov	x26, x0
+100089a18: aa1c03e0    	mov	x0, x28
+100089a1c: aa0103f6    	mov	x22, x1
+100089a20: 9422589f    	bl	0x10091fc9c <_writev+0x10091fc9c>
+100089a24: aa1503e8    	mov	x8, x21
+100089a28: 942248e0    	bl	0x10091bda8 <_writev+0x10091bda8>
+100089a2c: d2cea008    	mov	x8, #0x750000000000     ; =128642860449792
+100089a30: f2f82448    	movk	x8, #0xc122, lsl #48
+100089a34: 9e670100    	fmov	d0, x8
+100089a38: f81583b3    	stur	x19, [x29, #-0xa8]
+100089a3c: aa1303e8    	mov	x8, x19
+100089a40: aa1503f4    	mov	x20, x21
+100089a44: 942248c4    	bl	0x10091bd54 <_writev+0x10091bd54>
+100089a48: f85703a8    	ldur	x8, [x29, #-0x90]
+100089a4c: f9400508    	ldr	x8, [x8, #0x8]
+100089a50: aa1503e0    	mov	x0, x21
+100089a54: f85503a1    	ldur	x1, [x29, #-0xb0]
+100089a58: f81403a8    	stur	x8, [x29, #-0xc0]
+100089a5c: d63f0100    	blr	x8
+100089a60: b0004bc0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+100089a64: 910be000    	add	x0, x0, #0x2f8
+100089a68: 942258ed    	bl	0x10091fe1c <_writev+0x10091fe1c>
+100089a6c: aa0003f4    	mov	x20, x0
+100089a70: b0004bc0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+100089a74: 910c8000    	add	x0, x0, #0x320
+100089a78: 942258e9    	bl	0x10091fe1c <_writev+0x10091fe1c>
+100089a7c: aa0003f5    	mov	x21, x0
+100089a80: d10183a8    	sub	x8, x29, #0x60
+100089a84: f85783a0    	ldur	x0, [x29, #-0x88]
+100089a88: aa1403e1    	mov	x1, x20
+100089a8c: aa1503e2    	mov	x2, x21
+100089a90: 94224995    	bl	0x10091c0e4 <_writev+0x10091c0e4>
+100089a94: aa1403e0    	mov	x0, x20
+100089a98: 9422592c    	bl	0x10091ff48 <_writev+0x10091ff48>
+100089a9c: aa1503e0    	mov	x0, x21
+100089aa0: 9422592a    	bl	0x10091ff48 <_writev+0x10091ff48>
+100089aa4: f85a03bb    	ldur	x27, [x29, #-0x60]
+100089aa8: f9400b68    	ldr	x8, [x27, #0x10]
+100089aac: a93a5bba    	stp	x26, x22, [x29, #-0x60]
+100089ab0: f81703a8    	stur	x8, [x29, #-0x90]
+100089ab4: f81483b6    	stur	x22, [x29, #-0xb8]
+100089ab8: b40014c8    	cbz	x8, 0x100089d50 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x4dc>
+100089abc: d2800019    	mov	x25, #0x0               ; =0
+100089ac0: 9240bf48    	and	x8, x26, #0xffffffffffff
+100089ac4: d378eec9    	ubfx	x9, x22, #56, #4
+100089ac8: f24302df    	tst	x22, #0x2000000000000000
+100089acc: 9a890108    	csel	x8, x8, x9, eq
+100089ad0: f81683a8    	stur	x8, [x29, #-0x98]
+100089ad4: f00075bc    	adrp	x28, 0x100f40000 <_writev+0x100f40000>
+100089ad8: f944f39c    	ldr	x28, [x28, #0x9e0]
+100089adc: 1400000b    	b	0x100089b08 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x294>
+100089ae0: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089ae4: f9442d28    	ldr	x8, [x9, #0x858]
+100089ae8: 91000508    	add	x8, x8, #0x1
+100089aec: f9042d28    	str	x8, [x9, #0x858]
+100089af0: aa1703e0    	mov	x0, x23
+100089af4: 94001557    	bl	0x10008f050 <_$s7Ghostty13SessionRecordVWOh>
+100089af8: 91000739    	add	x25, x25, #0x1
+100089afc: f85703a8    	ldur	x8, [x29, #-0x90]
+100089b00: eb19011f    	cmp	x8, x25
+100089b04: 540012a0    	b.eq	0x100089d58 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x4e4>
+100089b08: f9400b68    	ldr	x8, [x27, #0x10]
+100089b0c: eb08033f    	cmp	x25, x8
+100089b10: 54001442    	b.hs	0x100089d98 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x524>
+100089b14: 39414308    	ldrb	w8, [x24, #0x50]
+100089b18: 91008109    	add	x9, x8, #0x20
+100089b1c: 8a280133    	bic	x19, x9, x8
+100089b20: f9402716    	ldr	x22, [x24, #0x48]
+100089b24: 8b130368    	add	x8, x27, x19
+100089b28: 9b1922c0    	madd	x0, x22, x25, x8
+100089b2c: aa1703e1    	mov	x1, x23
+100089b30: 97ffbc9f    	bl	0x100078dac <_$s7Ghostty13SessionRecordVWOc>
+100089b34: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089b38: f9442128    	ldr	x8, [x9, #0x840]
+100089b3c: 91000508    	add	x8, x8, #0x1
+100089b40: f9042128    	str	x8, [x9, #0x840]
+100089b44: b0004bc0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+100089b48: 910ee000    	add	x0, x0, #0x3b8
+100089b4c: 942258b4    	bl	0x10091fe1c <_writev+0x10091fe1c>
+100089b50: aa0003f4    	mov	x20, x0
+100089b54: b0004bc0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+100089b58: 910f8000    	add	x0, x0, #0x3e0
+100089b5c: 942258b0    	bl	0x10091fe1c <_writev+0x10091fe1c>
+100089b60: aa0003fa    	mov	x26, x0
+100089b64: d101e3a8    	sub	x8, x29, #0x78
+100089b68: f85783a0    	ldur	x0, [x29, #-0x88]
+100089b6c: aa1403e1    	mov	x1, x20
+100089b70: aa1a03e2    	mov	x2, x26
+100089b74: 9422495c    	bl	0x10091c0e4 <_writev+0x10091c0e4>
+100089b78: aa1403e0    	mov	x0, x20
+100089b7c: 942258f3    	bl	0x10091ff48 <_writev+0x10091ff48>
+100089b80: aa1a03e0    	mov	x0, x26
+100089b84: 942258f1    	bl	0x10091ff48 <_writev+0x10091ff48>
+100089b88: 385883a8    	ldurb	w8, [x29, #-0x78]
+100089b8c: 340001c8    	cbz	w8, 0x100089bc4 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x350>
+100089b90: 7100051f    	cmp	w8, #0x1
+100089b94: 54000221    	b.ne	0x100089bd8 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x364>
+100089b98: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089b9c: f9442928    	ldr	x8, [x9, #0x850]
+100089ba0: 91000508    	add	x8, x8, #0x1
+100089ba4: f9042928    	str	x8, [x9, #0x850]
+100089ba8: f85803a8    	ldur	x8, [x29, #-0x80]
+100089bac: b9802908    	ldrsw	x8, [x8, #0x28]
+100089bb0: 8b0802e0    	add	x0, x23, x8
+100089bb4: f85583a1    	ldur	x1, [x29, #-0xa8]
+100089bb8: 94224870    	bl	0x10091bd78 <_writev+0x10091bd78>
+100089bbc: 3707f920    	tbnz	w0, #0x0, 0x100089ae0 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x26c>
+100089bc0: 14000013    	b	0x100089c0c <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x398>
+100089bc4: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089bc8: f9442528    	ldr	x8, [x9, #0x848]
+100089bcc: 91000508    	add	x8, x8, #0x1
+100089bd0: f9042528    	str	x8, [x9, #0x848]
+100089bd4: 1400000e    	b	0x100089c0c <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x398>
+100089bd8: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089bdc: f9443128    	ldr	x8, [x9, #0x860]
+100089be0: 91000508    	add	x8, x8, #0x1
+100089be4: f9043128    	str	x8, [x9, #0x860]
+100089be8: f85803a8    	ldur	x8, [x29, #-0x80]
+100089bec: b9803108    	ldrsw	x8, [x8, #0x30]
+100089bf0: 38686ae8    	ldrb	w8, [x23, x8]
+100089bf4: 360000c8    	tbz	w8, #0x0, 0x100089c0c <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x398>
+100089bf8: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089bfc: f9443528    	ldr	x8, [x9, #0x868]
+100089c00: 91000508    	add	x8, x8, #0x1
+100089c04: f9043528    	str	x8, [x9, #0x868]
+100089c08: 17ffffba    	b	0x100089af0 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x27c>
+100089c0c: f85683a8    	ldur	x8, [x29, #-0x98]
+100089c10: b40005e8    	cbz	x8, 0x100089ccc <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x458>
+100089c14: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089c18: f9443d28    	ldr	x8, [x9, #0x878]
+100089c1c: 91000508    	add	x8, x8, #0x1
+100089c20: f9043d28    	str	x8, [x9, #0x878]
+100089c24: f85803b5    	ldur	x21, [x29, #-0x80]
+100089c28: b98022a8    	ldrsw	x8, [x21, #0x20]
+100089c2c: 8b0802e8    	add	x8, x23, x8
+100089c30: a9400109    	ldp	x9, x0, [x8]
+100089c34: a93883a9    	stp	x9, x0, [x29, #-0x78]
+100089c38: 9422581f    	bl	0x10091fcb4 <_writev+0x10091fcb4>
+100089c3c: d101e3b4    	sub	x20, x29, #0x78
+100089c40: 52800400    	mov	w0, #0x20               ; =32
+100089c44: d2fc2001    	mov	x1, #-0x1f00000000000000 ; =-2233785415175766016
+100089c48: 94224ee5    	bl	0x10091d7dc <_writev+0x10091d7dc>
+100089c4c: b9801ea8    	ldrsw	x8, [x21, #0x1c]
+100089c50: 8b0802e8    	add	x8, x23, x8
+100089c54: a9400500    	ldp	x0, x1, [x8]
+100089c58: 94224ee1    	bl	0x10091d7dc <_writev+0x10091d7dc>
+100089c5c: 52800400    	mov	w0, #0x20               ; =32
+100089c60: d2fc2001    	mov	x1, #-0x1f00000000000000 ; =-2233785415175766016
+100089c64: 94224ede    	bl	0x10091d7dc <_writev+0x10091d7dc>
+100089c68: b9802ea8    	ldrsw	x8, [x21, #0x2c]
+100089c6c: 8b0802e8    	add	x8, x23, x8
+100089c70: a9400500    	ldp	x0, x1, [x8]
+100089c74: 94224eda    	bl	0x10091d7dc <_writev+0x10091d7dc>
+100089c78: a978d3a0    	ldp	x0, x20, [x29, #-0x78]
+100089c7c: aa1403e1    	mov	x1, x20
+100089c80: 94224ea4    	bl	0x10091d710 <_writev+0x10091d710>
+100089c84: aa0003fa    	mov	x26, x0
+100089c88: aa0103f5    	mov	x21, x1
+100089c8c: aa1403e0    	mov	x0, x20
+100089c90: 94225803    	bl	0x10091fc9c <_writev+0x10091fc9c>
+100089c94: a938d7ba    	stp	x26, x21, [x29, #-0x78]
+100089c98: d10183a0    	sub	x0, x29, #0x60
+100089c9c: d101e3b4    	sub	x20, x29, #0x78
+100089ca0: f00075a1    	adrp	x1, 0x100f40000 <_writev+0x100f40000>
+100089ca4: f940b821    	ldr	x1, [x1, #0x170]
+100089ca8: aa0103e2    	mov	x2, x1
+100089cac: f85603a3    	ldur	x3, [x29, #-0xa0]
+100089cb0: aa0303e4    	mov	x4, x3
+100089cb4: 94225080    	bl	0x10091deb4 <_writev+0x10091deb4>
+100089cb8: aa0003f4    	mov	x20, x0
+100089cbc: aa1503e0    	mov	x0, x21
+100089cc0: 942257f7    	bl	0x10091fc9c <_writev+0x10091fc9c>
+100089cc4: 3607f174    	tbz	w20, #0x0, 0x100089af0 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x27c>
+100089cc8: 14000005    	b	0x100089cdc <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x468>
+100089ccc: d0007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+100089cd0: f9443928    	ldr	x8, [x9, #0x870]
+100089cd4: 91000508    	add	x8, x8, #0x1
+100089cd8: f9043928    	str	x8, [x9, #0x870]
+100089cdc: aa1c03e0    	mov	x0, x28
+100089ce0: 94225891    	bl	0x10091ff24 <_writev+0x10091ff24>
+100089ce4: f81983bc    	stur	x28, [x29, #-0x68]
+100089ce8: 37000100    	tbnz	w0, #0x0, 0x100089d08 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x494>
+100089cec: f9400b88    	ldr	x8, [x28, #0x10]
+100089cf0: 91000501    	add	x1, x8, #0x1
+100089cf4: d101a3b4    	sub	x20, x29, #0x68
+100089cf8: 52800000    	mov	w0, #0x0                ; =0
+100089cfc: 52800022    	mov	w2, #0x1                ; =1
+100089d00: 94064728    	bl	0x10021b9a0 <_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtF7Ghostty13SessionRecordV_Tg5>
+100089d04: f85983bc    	ldur	x28, [x29, #-0x68]
+100089d08: a9412395    	ldp	x21, x8, [x28, #0x10]
+100089d0c: 910006ba    	add	x26, x21, #0x1
+100089d10: eb4806bf    	cmp	x21, x8, lsr #1
+100089d14: 540000e2    	b.hs	0x100089d30 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x4bc>
+100089d18: f9000b9a    	str	x26, [x28, #0x10]
+100089d1c: 8b130388    	add	x8, x28, x19
+100089d20: 9b1622a1    	madd	x1, x21, x22, x8
+100089d24: aa1703e0    	mov	x0, x23
+100089d28: 97ffbc32    	bl	0x100078df0 <_$s7Ghostty13SessionRecordVWOb>
+100089d2c: 17ffff73    	b	0x100089af8 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x284>
+100089d30: f100051f    	cmp	x8, #0x1
+100089d34: 1a9f97e0    	cset	w0, hi
+100089d38: d101a3b4    	sub	x20, x29, #0x68
+100089d3c: aa1a03e1    	mov	x1, x26
+100089d40: 52800022    	mov	w2, #0x1                ; =1
+100089d44: 94064717    	bl	0x10021b9a0 <_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtF7Ghostty13SessionRecordV_Tg5>
+100089d48: f85983bc    	ldur	x28, [x29, #-0x68]
+100089d4c: 17fffff3    	b	0x100089d18 <_$s7Ghostty19SessionLibraryModelC7visibleSayAA0B6RecordVGvg+0x4a4>
+100089d50: f00075bc    	adrp	x28, 0x100f40000 <_writev+0x100f40000>
+100089d54: f944f39c    	ldr	x28, [x28, #0x9e0]
+100089d58: f85483a0    	ldur	x0, [x29, #-0xb8]
+100089d5c: 942257d0    	bl	0x10091fc9c <_writev+0x10091fc9c>
+100089d60: aa1b03e0    	mov	x0, x27
+100089d64: 942257ce    	bl	0x10091fc9c <_writev+0x10091fc9c>
+100089d68: a97503a1    	ldp	x1, x0, [x29, #-0xb0]
+100089d6c: f85403a8    	ldur	x8, [x29, #-0xc0]
+100089d70: d63f0100    	blr	x8
+100089d74: aa1c03e0    	mov	x0, x28
+100089d78: d10143bf    	sub	sp, x29, #0x50
+100089d7c: a9457bfd    	ldp	x29, x30, [sp, #0x50]
+100089d80: a9444ff4    	ldp	x20, x19, [sp, #0x40]
+100089d84: a94357f6    	ldp	x22, x21, [sp, #0x30]
+100089d88: a9425ff8    	ldp	x24, x23, [sp, #0x20]
+100089d8c: a94167fa    	ldp	x26, x25, [sp, #0x10]
+100089d90: a8c66ffc    	ldp	x28, x27, [sp], #0x60
+100089d94: d65f03c0    	ret
+100089d98: d4200020    	brk	#0x1

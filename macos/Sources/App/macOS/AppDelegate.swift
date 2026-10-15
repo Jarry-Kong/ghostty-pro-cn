@@ -85,6 +85,9 @@ class AppDelegate: NSObject,
     /// The dock menu
     private var dockMenu: NSMenu = NSMenu()
 
+    /// 保持恢复功能窗口控制器存活，直到窗口关闭。
+    var recoveredWindowControllers: [NSWindowController] = []
+
     /// This is only true before application has become active.
     private var applicationHasBecomeActive: Bool = false
 
@@ -305,6 +308,7 @@ class AppDelegate: NSObject,
 
         // Setup our menu
         setupMenuImages()
+        setupRecoveredFeaturesMenu()
 
         // Setup signal handlers
         setupSignals()
@@ -1261,6 +1265,9 @@ extension AppDelegate {
 extension AppDelegate: NSMenuItemValidation {
     func validateMenuItem(_ item: NSMenuItem) -> Bool {
         switch item.action {
+        case #selector(stopVoice(_:)):
+            return VoiceController.shared.isSpeaking
+
         case #selector(setAsDefaultTerminal(_:)):
             return NSWorkspace.shared.defaultTerminal != Bundle.main.bundleURL
 

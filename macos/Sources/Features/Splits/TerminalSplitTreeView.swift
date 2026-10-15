@@ -119,6 +119,7 @@ private struct TerminalSplitLeaf: View {
                         .allowsHitTesting(false)
                 }
             }
+            .overlay { VoiceOverlay(surfaceView: surfaceView) }
             .onPreferenceChange(Ghostty.DraggingSurfaceKey.self) { value in
                 isSelfDragging = value == surfaceView.id
                 if isSelfDragging {

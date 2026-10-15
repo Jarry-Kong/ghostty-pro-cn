@@ -56,6 +56,10 @@ pub fn create(b: *std.Build, opts: Options) ?*MetallibStep {
         b.fmt("metal {s}", .{opts.name}),
     );
     run_ir.addArgs(&.{ "/usr/bin/xcrun", "-sdk", sdk, "metal", "-o" });
+    // 允许 Metal 使用完整 Xcode，同时保留 Zig 所需的兼容 SDK。
+    if (b.graph.env_map.get("GHOSTTY_XCODE_DEVELOPER_DIR")) |developer_dir| {
+        run_ir.setEnvironmentVariable("DEVELOPER_DIR", developer_dir);
+    }
     const output_ir = run_ir.addOutputFileArg(b.fmt("{s}.ir", .{opts.name}));
     run_ir.addArgs(&.{"-c"});
     for (opts.sources) |source| run_ir.addFileArg(source);
@@ -71,6 +75,9 @@ pub fn create(b: *std.Build, opts: Options) ?*MetallibStep {
         b.fmt("metallib {s}", .{opts.name}),
     );
     run_lib.addArgs(&.{ "/usr/bin/xcrun", "-sdk", sdk, "metallib", "-o" });
+    if (b.graph.env_map.get("GHOSTTY_XCODE_DEVELOPER_DIR")) |developer_dir| {
+        run_lib.setEnvironmentVariable("DEVELOPER_DIR", developer_dir);
+    }
     const output_lib = run_lib.addOutputFileArg(b.fmt("{s}.metallib", .{opts.name}));
     run_lib.addFileArg(output_ir);
     run_lib.step.dependOn(&run_ir.step);

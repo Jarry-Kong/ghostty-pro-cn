@@ -1,0 +1,1203 @@
+[
+  {
+    "name": "Ghostty.(SessionRow in _87418AB5427B474832C65EF7D827D42E)",
+    "address": "0x100eb039c",
+    "fields": [
+      {
+        "name": "record",
+        "type_mangled": "\u0002\\xad\u001c\u000b"
+      },
+      {
+        "name": "isSelected",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "isRenaming",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "onToggle",
+        "type_mangled": "yyc"
+      },
+      {
+        "name": "onOpen",
+        "type_mangled": "yyc"
+      },
+      {
+        "name": "onStartRename",
+        "type_mangled": "yyc"
+      },
+      {
+        "name": "onCommitRename",
+        "type_mangled": "ySSc"
+      },
+      {
+        "name": "onCancelRename",
+        "type_mangled": "yyc"
+      },
+      {
+        "name": "_hovering",
+        "type_mangled": "\u0002\\xd7\\xed\n"
+      },
+      {
+        "name": "_draftName",
+        "type_mangled": "\u0002g\\xb4\u000b"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceError",
+    "address": "0x100eb1cc8",
+    "fields": [
+      {
+        "name": "routeNotAllowed",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "httpError",
+        "type_mangled": "Si_SSt"
+      },
+      {
+        "name": "audioNotFound",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "network",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "notConfigured",
+        "type_mangled": null
+      },
+      {
+        "name": "unauthorized",
+        "type_mangled": null
+      },
+      {
+        "name": "emptyText",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SpeechPlayer",
+    "address": "0x100eb1ba4",
+    "fields": [
+      {
+        "name": "onFinish",
+        "type_mangled": "yycSg"
+      },
+      {
+        "name": "onProgress",
+        "type_mangled": "ySd_SdtcSg"
+      },
+      {
+        "name": "player",
+        "type_mangled": "So8AVPlayerCSg"
+      },
+      {
+        "name": "dataPlayer",
+        "type_mangled": "So13AVAudioPlayerCSg"
+      },
+      {
+        "name": "endObserver",
+        "type_mangled": "So8NSObject_pSg"
+      },
+      {
+        "name": "failObserver",
+        "type_mangled": "So8NSObject_pSg"
+      },
+      {
+        "name": "timeObserver",
+        "type_mangled": "ypSg"
+      },
+      {
+        "name": "remoteFallbackURL",
+        "type_mangled": "\u0002c\\xb2\u000b"
+      },
+      {
+        "name": "watchdog",
+        "type_mangled": "So7NSTimerCSg"
+      },
+      {
+        "name": "didLogPlaying",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "isActive",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "isPaused",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "rate",
+        "type_mangled": "Sd"
+      },
+      {
+        "name": "dataProgressTimer",
+        "type_mangled": "So7NSTimerCSg"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceOverlay",
+    "address": "0x100eb1f9c",
+    "fields": [
+      {
+        "name": "_surfaceView",
+        "type_mangled": "\u0002]\\xa3\n"
+      },
+      {
+        "name": "_model",
+        "type_mangled": "\u0002?\\x9f\n"
+      },
+      {
+        "name": "_controller",
+        "type_mangled": "\u0002A\\xa3\n"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.QwenTTSClient",
+    "address": "0x100eb1c6c",
+    "fields": [
+      {
+        "name": "settings",
+        "type_mangled": "\u0002\\xbdz\n"
+      },
+      {
+        "name": "task",
+        "type_mangled": "So20NSURLSessionDataTaskCSg"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionOpener.Mode",
+    "address": "0x100eb04e4",
+    "fields": [
+      {
+        "name": "tabsInCurrentWindow",
+        "type_mangled": null
+      },
+      {
+        "name": "tabsInNewWindow",
+        "type_mangled": null
+      },
+      {
+        "name": "separateWindows",
+        "type_mangled": null
+      },
+      {
+        "name": "splitsInNewWindow",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionOpener",
+    "address": "0x100eb0524",
+    "fields": []
+  },
+  {
+    "name": "Ghostty.SessionRecord.NameSource",
+    "address": "0x100eb05bc",
+    "fields": [
+      {
+        "name": "custom",
+        "type_mangled": null
+      },
+      {
+        "name": "ai",
+        "type_mangled": null
+      },
+      {
+        "name": "none",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionRecord",
+    "address": "0x100eb0534",
+    "fields": [
+      {
+        "name": "id",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "file",
+        "type_mangled": "\u0002Y\\xa3\u000b"
+      },
+      {
+        "name": "projectDir",
+        "type_mangled": "\u0002Y\\xa3\u000b"
+      },
+      {
+        "name": "workingDirectory",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "name",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "nameSource",
+        "type_mangled": "\u0001S\\xb5\\xfe\\xff"
+      },
+      {
+        "name": "lastActivity",
+        "type_mangled": "\u0002\\xfdb\u000b"
+      },
+      {
+        "name": "lastPrompt",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "isRunning",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "runningPID",
+        "type_mangled": "\u000292\u000b"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SpeechSegment.State",
+    "address": "0x100eb20f0",
+    "fields": [
+      {
+        "name": "pending",
+        "type_mangled": null
+      },
+      {
+        "name": "synthesizing",
+        "type_mangled": null
+      },
+      {
+        "name": "ready",
+        "type_mangled": null
+      },
+      {
+        "name": "failed",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SpeechSegment",
+    "address": "0x100eb201c",
+    "fields": [
+      {
+        "name": "id",
+        "type_mangled": "\u0002˙\u000b"
+      },
+      {
+        "name": "index",
+        "type_mangled": "Si"
+      },
+      {
+        "name": "text",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "state",
+        "type_mangled": "\u0001\\xcb]\\xfe\\xff"
+      },
+      {
+        "name": "duration",
+        "type_mangled": "SdSg"
+      },
+      {
+        "name": "audioURL",
+        "type_mangled": "\u0002c\\xb2\u000b"
+      },
+      {
+        "name": "failureReason",
+        "type_mangled": "SSSg"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettings.GatewayVoice",
+    "address": "0x100eb22cc",
+    "fields": [
+      {
+        "name": "id",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "name",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "trait",
+        "type_mangled": "SS"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettings.RewriteModel",
+    "address": "0x100eb2298",
+    "fields": [
+      {
+        "name": "id",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "name",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "note",
+        "type_mangled": "SS"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettings.Engine",
+    "address": "0x100eb223c",
+    "fields": [
+      {
+        "name": "gateway",
+        "type_mangled": null
+      },
+      {
+        "name": "system",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettings.CodeMode",
+    "address": "0x100eb2264",
+    "fields": [
+      {
+        "name": "skip",
+        "type_mangled": null
+      },
+      {
+        "name": "simplify",
+        "type_mangled": null
+      },
+      {
+        "name": "verbatim",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettings",
+    "address": "0x100eb2220",
+    "fields": [
+      {
+        "name": "defaults",
+        "type_mangled": "So14NSUserDefaultsC"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.ScriptRewriter.Strength",
+    "address": "0x100eb1aa0",
+    "fields": [
+      {
+        "name": "conservative",
+        "type_mangled": null
+      },
+      {
+        "name": "natural",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.ScriptRewriter",
+    "address": "0x100eb1a78",
+    "fields": [
+      {
+        "name": "settings",
+        "type_mangled": "\u0002\\xbdz\n"
+      },
+      {
+        "name": "task",
+        "type_mangled": "So20NSURLSessionDataTaskCSg"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionRenamer.RenameError",
+    "address": "0x100eb0600",
+    "fields": [
+      {
+        "name": "writeFailed",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "emptyName",
+        "type_mangled": null
+      },
+      {
+        "name": "nameTooLong",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionRenamer",
+    "address": "0x100eb05f0",
+    "fields": []
+  },
+  {
+    "name": "Ghostty.VoiceControlBar",
+    "address": "0x100eb1fd0",
+    "fields": [
+      {
+        "name": "pwd",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "terminalTitle",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "_controller",
+        "type_mangled": "\u0002A\\xa3\n"
+      },
+      {
+        "name": "_hovering",
+        "type_mangled": "\u0002\\xd7\\xed\n"
+      },
+      {
+        "name": "_scrubbing",
+        "type_mangled": "\u0002\u0011\\xae\n"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceController",
+    "address": "0x100eb1d60",
+    "fields": [
+      {
+        "name": "_isSpeaking",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_isSynthesizing",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_isRewriting",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_currentSummary",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_isPaused",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_elapsed",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "_total",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "_fallbackNotice",
+        "type_mangled": "\u0002\u0001\\xaa\u000b"
+      },
+      {
+        "name": "_segments",
+        "type_mangled": "\u0002Q\\x99\n"
+      },
+      {
+        "name": "_currentSegmentIndex",
+        "type_mangled": "\u0002?\\x99\n"
+      },
+      {
+        "name": "_waitingSegmentIndex",
+        "type_mangled": "\u00025\\x99\n"
+      },
+      {
+        "name": "_segmentOffsets",
+        "type_mangled": "\u0002)\\x99\n"
+      },
+      {
+        "name": "_playingHistoryID",
+        "type_mangled": "\u0002\u0001\\xaa\u000b"
+      },
+      {
+        "name": "_playbackRate",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "settings",
+        "type_mangled": "\u0002\\xbdz\n"
+      },
+      {
+        "name": "segmentedPlayer",
+        "type_mangled": "\u0001[s\\xfe\\xff"
+      },
+      {
+        "name": "$__lazy_storage_$_pipeline",
+        "type_mangled": "\u0002Kz\n"
+      },
+      {
+        "name": "currentRecordingID",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "currentProjectName",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "currentTerminalTitle",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "currentWasRewritten",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "$__lazy_storage_$_systemSynth",
+        "type_mangled": "\u0002cz\n"
+      },
+      {
+        "name": "$__lazy_storage_$_rewriter",
+        "type_mangled": "\u0002Cx\n"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceHistoryEntry.(CodingKeys in _545FD0351A93EF61A3B6B74376B29B7A)",
+    "address": "0x100eb2170",
+    "fields": [
+      {
+        "name": "id",
+        "type_mangled": null
+      },
+      {
+        "name": "createdAt",
+        "type_mangled": null
+      },
+      {
+        "name": "summary",
+        "type_mangled": null
+      },
+      {
+        "name": "projectName",
+        "type_mangled": null
+      },
+      {
+        "name": "terminalTitle",
+        "type_mangled": null
+      },
+      {
+        "name": "totalDuration",
+        "type_mangled": null
+      },
+      {
+        "name": "segments",
+        "type_mangled": null
+      },
+      {
+        "name": "wasRewritten",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceHistoryEntry.SegmentRecord.(CodingKeys in _545FD0351A93EF61A3B6B74376B29B7A)",
+    "address": "0x100eb21e0",
+    "fields": [
+      {
+        "name": "index",
+        "type_mangled": null
+      },
+      {
+        "name": "text",
+        "type_mangled": null
+      },
+      {
+        "name": "fileName",
+        "type_mangled": null
+      },
+      {
+        "name": "duration",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceHistoryEntry.SegmentRecord",
+    "address": "0x100eb2130",
+    "fields": [
+      {
+        "name": "index",
+        "type_mangled": "Si"
+      },
+      {
+        "name": "text",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "fileName",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "duration",
+        "type_mangled": "Sd"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceHistoryEntry",
+    "address": "0x100eb2080",
+    "fields": [
+      {
+        "name": "id",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "createdAt",
+        "type_mangled": "\u0002\\xfdb\u000b"
+      },
+      {
+        "name": "summary",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "projectName",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "terminalTitle",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "totalDuration",
+        "type_mangled": "Sd"
+      },
+      {
+        "name": "segments",
+        "type_mangled": "Say\u0002fx\n"
+      },
+      {
+        "name": "wasRewritten",
+        "type_mangled": "Sb"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceHistoryStore.(PendingRecording in _F1F7F95370FC865F93A376BA9E4F3656)",
+    "address": "0x100eb1f40",
+    "fields": [
+      {
+        "name": "createdAt",
+        "type_mangled": "\u0002\\xfdb\u000b"
+      },
+      {
+        "name": "segments",
+        "type_mangled": "Say\u0002fx\n"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceHistoryStore",
+    "address": "0x100eb1eb8",
+    "fields": [
+      {
+        "name": "rootDirectory",
+        "type_mangled": "\u0002Y\\xa3\u000b"
+      },
+      {
+        "name": "queue",
+        "type_mangled": "So17OS_dispatch_queueC"
+      },
+      {
+        "name": "_maxEntries",
+        "type_mangled": "Si"
+      },
+      {
+        "name": "_maxTotalBytes",
+        "type_mangled": "\u0002\\xaf\\xbe\n"
+      },
+      {
+        "name": "_pending",
+        "type_mangled": "SDySS\u0001\\xbc{\\xfe\\xffG"
+      },
+      {
+        "name": "_rootPrepared",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "idLock",
+        "type_mangled": "So6NSLockC"
+      },
+      {
+        "name": "lastStamp",
+        "type_mangled": "SS"
+      },
+      {
+        "name": "usedSuffixes",
+        "type_mangled": "ShySSG"
+      },
+      {
+        "name": "stampFormatter",
+        "type_mangled": "So15NSDateFormatterC"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceOverlayModel",
+    "address": "0x100eb1f68",
+    "fields": [
+      {
+        "name": "_isVisible",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "pwd",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "timer",
+        "type_mangled": "So7NSTimerCSg"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettingsView",
+    "address": "0x100eb2488",
+    "fields": [
+      {
+        "name": "_model",
+        "type_mangled": "\u0002\\xd9~\n"
+      },
+      {
+        "name": "_controller",
+        "type_mangled": "\u0002A\\xa3\n"
+      },
+      {
+        "name": "_confirmClearHistory",
+        "type_mangled": "\u0002\\xd7\\xed\n"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionLibraryView",
+    "address": "0x100eb0380",
+    "fields": [
+      {
+        "name": "_model",
+        "type_mangled": "\u0002\u001fw\u000b"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SpeechSynthesizing",
+    "address": "0x100eb1c5c",
+    "fields": []
+  },
+  {
+    "name": "Ghostty.VoiceSettingsModel",
+    "address": "0x100eb2310",
+    "fields": [
+      {
+        "name": "store",
+        "type_mangled": "\u0002\\xbdz\n"
+      },
+      {
+        "name": "_enabled",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_engine",
+        "type_mangled": "\u0002\\xddv\n"
+      },
+      {
+        "name": "_baseURL",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_model",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_voiceName",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_speed",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "_codeMode",
+        "type_mangled": "\u0002\\xcfv\n"
+      },
+      {
+        "name": "_autoPlay",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_rewriteEnabled",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_rewriteStrength",
+        "type_mangled": "\u0002\\xc1v\n"
+      },
+      {
+        "name": "_rewriteMinLength",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "_rewriteModelSelection",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_rewriteModel",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_rewriteUseSeparateGateway",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_rewriteBaseURL",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_rewriteTokenInput",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_rewriteTokenStatus",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_testConnStatus",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_testing",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_showOverlay",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_saveHistory",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_historyMaxCount",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "_historyMaxMB",
+        "type_mangled": "\u0002[\\x99\n"
+      },
+      {
+        "name": "_historyCount",
+        "type_mangled": "\u0002?\\x99\n"
+      },
+      {
+        "name": "_historySizeText",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_voiceSelection",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_tokenInput",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_tokenStatus",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_testStatus",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionLibraryModel.Filter",
+    "address": "0x100eb04b0",
+    "fields": [
+      {
+        "name": "all",
+        "type_mangled": null
+      },
+      {
+        "name": "recent",
+        "type_mangled": null
+      },
+      {
+        "name": "idle",
+        "type_mangled": null
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SessionLibraryModel",
+    "address": "0x100eb0440",
+    "fields": [
+      {
+        "name": "_records",
+        "type_mangled": "\u0002gG\u000b"
+      },
+      {
+        "name": "_isLoading",
+        "type_mangled": "\u0002\\xeb\\xc5\u000b"
+      },
+      {
+        "name": "_keyword",
+        "type_mangled": "\u0002\u0011\\xaa\u000b"
+      },
+      {
+        "name": "_filter",
+        "type_mangled": "\u0002\\xe7@\u000b"
+      },
+      {
+        "name": "_selection",
+        "type_mangled": "\u0002\\xe7N\u000b"
+      },
+      {
+        "name": "_mode",
+        "type_mangled": "\u0002\\xc5O\u000b"
+      },
+      {
+        "name": "_renamingID",
+        "type_mangled": "\u0002\u0001\\xaa\u000b"
+      },
+      {
+        "name": "_toast",
+        "type_mangled": "\u0002\u0001\\xaa\u000b"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceTranscriptView",
+    "address": "0x100eb261c",
+    "fields": [
+      {
+        "name": "_model",
+        "type_mangled": "\u0002\\x97\u0017\n"
+      },
+      {
+        "name": "_confirmClearAll",
+        "type_mangled": "\u0002\\xd7\\xed\n"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SegmentedSpeechPlayer",
+    "address": "0x100eb1ac8",
+    "fields": [
+      {
+        "name": "onSegmentChange",
+        "type_mangled": "ySicSg"
+      },
+      {
+        "name": "onProgress",
+        "type_mangled": "ySd_SdtcSg"
+      },
+      {
+        "name": "onFinish",
+        "type_mangled": "yycSg"
+      },
+      {
+        "name": "onWaitingForSegment",
+        "type_mangled": "ySicSg"
+      },
+      {
+        "name": "onNeedSegment",
+        "type_mangled": "ySicSg"
+      },
+      {
+        "name": "segments",
+        "type_mangled": "Say\u0002\\xa4y\n"
+      },
+      {
+        "name": "currentIndex",
+        "type_mangled": "Si"
+      },
+      {
+        "name": "isActive",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "isPaused",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "isWaiting",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "rate",
+        "type_mangled": "Sd"
+      },
+      {
+        "name": "player",
+        "type_mangled": "So13AVAudioPlayerCSg"
+      },
+      {
+        "name": "preloadedPlayer",
+        "type_mangled": "So13AVAudioPlayerCSg"
+      },
+      {
+        "name": "preloadedIndex",
+        "type_mangled": "SiSg"
+      },
+      {
+        "name": "progressTimer",
+        "type_mangled": "So7NSTimerCSg"
+      },
+      {
+        "name": "secondsPerChar",
+        "type_mangled": "Sd"
+      },
+      {
+        "name": "elapsedBeforeCurrent",
+        "type_mangled": "Sd"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSynthesisPipeline",
+    "address": "0x100eb24bc",
+    "fields": [
+      {
+        "name": "lastRequestAt",
+        "type_mangled": "\u0002\u0011X\u000b"
+      },
+      {
+        "name": "onSegmentReady",
+        "type_mangled": "y\u0002j\\xef\t"
+      },
+      {
+        "name": "onSegmentFailed",
+        "type_mangled": "y\u0002j\\xef\t"
+      },
+      {
+        "name": "onAllSettled",
+        "type_mangled": "yycSg"
+      },
+      {
+        "name": "onFatalFailure",
+        "type_mangled": "y\u0002\\x90\\xee\t"
+      },
+      {
+        "name": "settings",
+        "type_mangled": "\u0002\\xbdz\n"
+      },
+      {
+        "name": "segments",
+        "type_mangled": "Say\u0002\\xa4y\n"
+      },
+      {
+        "name": "recordingID",
+        "type_mangled": "SSSg"
+      },
+      {
+        "name": "inFlight",
+        "type_mangled": "Si"
+      },
+      {
+        "name": "priority",
+        "type_mangled": "SaySiG"
+      },
+      {
+        "name": "playbackIndex",
+        "type_mangled": "Si"
+      },
+      {
+        "name": "clients",
+        "type_mangled": "SDySi\u00022\\xef\t"
+      },
+      {
+        "name": "cancelled",
+        "type_mangled": "Sb"
+      },
+      {
+        "name": "tempFiles",
+        "type_mangled": "Say\u0002`\\xfc\t"
+      },
+      {
+        "name": "retries",
+        "type_mangled": "SDyS2iG"
+      },
+      {
+        "name": "awaitingRetry",
+        "type_mangled": "ShySiG"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.SystemSpeechSynthesizer",
+    "address": "0x100eb1c94",
+    "fields": [
+      {
+        "name": "synth",
+        "type_mangled": "So19AVSpeechSynthesizerC"
+      },
+      {
+        "name": "settings",
+        "type_mangled": "\u0002\\xbdz\n"
+      },
+      {
+        "name": "onFinish",
+        "type_mangled": "yycSg"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceControllerRegistry",
+    "address": "0x100eb1e84",
+    "fields": [
+      {
+        "name": "bySurface",
+        "type_mangled": "SDy\u00020\\x86\n"
+      },
+      {
+        "name": "lock",
+        "type_mangled": "So6NSLockC"
+      },
+      {
+        "name": "active",
+        "type_mangled": "\u0001Ow\\xfe\\xffSgXw"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceSettingsWindowController",
+    "address": "0x100eb2300",
+    "fields": []
+  },
+  {
+    "name": "Ghostty.SessionLibraryWindowController",
+    "address": "0x100eb0424",
+    "fields": [
+      {
+        "name": "model",
+        "type_mangled": "\u0002s4\u000b"
+      }
+    ]
+  },
+  {
+    "name": "Ghostty.VoiceTranscriptWindowController",
+    "address": "0x100eb258c",
+    "fields": []
+  }
+]

@@ -824,7 +824,10 @@ extension TerminalWindow: TabTitleEditorDelegate {
         for targetWindow: NSWindow
     ) {
         guard let targetController = targetWindow.windowController as? BaseTerminalController else { return }
-        targetController.titleOverride = editedTitle.isEmpty ? nil : editedTitle
+        targetController.titleOverride = normalizedTabTitleOverride(
+            editedTitle: editedTitle,
+            currentOverride: targetController.titleOverride,
+            displayedTitle: targetWindow.title)
     }
 
     func tabTitleEditor(
@@ -843,4 +846,14 @@ extension TerminalWindow: TabTitleEditorDelegate {
         else { return }
         makeFirstResponder(focusedSurface)
     }
+}
+
+func normalizedTabTitleOverride(
+    editedTitle: String,
+    currentOverride: String?,
+    displayedTitle: String
+) -> String? {
+    guard !editedTitle.isEmpty else { return nil }
+    guard currentOverride != nil || editedTitle != displayedTitle else { return nil }
+    return editedTitle
 }

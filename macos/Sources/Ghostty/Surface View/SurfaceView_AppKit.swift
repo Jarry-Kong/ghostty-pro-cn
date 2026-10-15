@@ -1605,10 +1605,38 @@ extension Ghostty {
             item.setImageIfDesired(systemSymbolName: "pencil.line")
             item = menu.addItem(withTitle: "修改终端标题…", action: #selector(changeTitle(_:)), keyEquivalent: "")
 
+            if VoiceController.shared.settings.isEnabled {
+                menu.addItem(.separator())
+                for (title, action) in [
+                    ("朗读 Claude 最新回复", #selector(speakSurfaceLatestReply(_:))),
+                    ("朗读选中内容", #selector(speakSurfaceSelection(_:))),
+                    ("停止朗读", #selector(stopSurfaceSpeech(_:)))
+                ] {
+                    let speechItem = menu.addItem(withTitle: title, action: action, keyEquivalent: "")
+                    speechItem.target = self
+                }
+            }
+
             return menu
         }
 
         // MARK: Menu Handlers
+
+        @objc func speakSurfaceLatestReply(_ sender: Any?) {
+            VoiceController.shared.speakLatestReply(cwd: pwd, terminalTitle: title) { [weak self] in
+                guard let self else { return false }
+                return TerminalController.lastMain?.focusedSurface === self
+            }
+        }
+
+        @objc func speakSurfaceSelection(_ sender: Any?) {
+            guard let text = accessibilitySelectedText(), !text.isEmpty else { return }
+            VoiceController.shared.speak(text, summary: "选中内容",
+                projectName: pwd.map { URL(fileURLWithPath: $0).lastPathComponent },
+                terminalTitle: title)
+        }
+
+        @objc func stopSurfaceSpeech(_ sender: Any?) { VoiceController.shared.stop() }
 
         @IBAction func copy(_ sender: Any?) {
             guard let surface = self.surface else { return }
@@ -2194,6 +2222,12 @@ extension Ghostty.SurfaceView: NSServicesMenuRequestor {
 extension Ghostty.SurfaceView: NSMenuItemValidation {
     func validateMenuItem(_ item: NSMenuItem) -> Bool {
         switch item.action {
+        case #selector(speakSurfaceSelection(_:)):
+            return !(accessibilitySelectedText() ?? "").isEmpty
+
+        case #selector(stopSurfaceSpeech(_:)):
+            return VoiceController.shared.isSpeaking
+
         case #selector(pasteSelection):
             let pb = NSPasteboard.ghosttySelection
             guard let str = pb.getOpinionatedStringContents() else { return false }

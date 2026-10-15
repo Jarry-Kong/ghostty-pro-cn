@@ -1,0 +1,80 @@
+
+Ghostty Pro 中文版 1.6.0 修复版.app/Contents/MacOS/ghostty:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+000000010008b4b0 <_$s7Ghostty19SessionLibraryModelC9overLimitSbvg>:
+10008b4b0: d10103ff    	sub	sp, sp, #0x40
+10008b4b4: a90157f6    	stp	x22, x21, [sp, #0x10]
+10008b4b8: a9024ff4    	stp	x20, x19, [sp, #0x20]
+10008b4bc: a9037bfd    	stp	x29, x30, [sp, #0x30]
+10008b4c0: 9100c3fd    	add	x29, sp, #0x30
+10008b4c4: 90007888    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+10008b4c8: f943b509    	ldr	x9, [x8, #0x768]
+10008b4cc: 91000529    	add	x9, x9, #0x1
+10008b4d0: f903b509    	str	x9, [x8, #0x768]
+10008b4d4: f0004ba0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+10008b4d8: 9108e000    	add	x0, x0, #0x238
+10008b4dc: 94225250    	bl	0x10091fe1c <_writev+0x10091fe1c>
+10008b4e0: aa0003f3    	mov	x19, x0
+10008b4e4: f0004ba0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+10008b4e8: 91098000    	add	x0, x0, #0x260
+10008b4ec: 9422524c    	bl	0x10091fe1c <_writev+0x10091fe1c>
+10008b4f0: aa0003f5    	mov	x21, x0
+10008b4f4: 91003fe8    	add	x8, sp, #0xf
+10008b4f8: aa1403e0    	mov	x0, x20
+10008b4fc: aa1303e1    	mov	x1, x19
+10008b500: aa1503e2    	mov	x2, x21
+10008b504: 942242f8    	bl	0x10091c0e4 <_writev+0x10091c0e4>
+10008b508: aa1303e0    	mov	x0, x19
+10008b50c: 9422528f    	bl	0x10091ff48 <_writev+0x10091ff48>
+10008b510: aa1503e0    	mov	x0, x21
+10008b514: 9422528d    	bl	0x10091ff48 <_writev+0x10091ff48>
+10008b518: 39403fe8    	ldrb	w8, [sp, #0xf]
+10008b51c: 90007889    	adrp	x9, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+10008b520: f944552a    	ldr	x10, [x9, #0x8a8]
+10008b524: 9100054a    	add	x10, x10, #0x1
+10008b528: f904552a    	str	x10, [x9, #0x8a8]
+10008b52c: 71000d1f    	cmp	w8, #0x3
+10008b530: 54000381    	b.ne	0x10008b5a0 <_$s7Ghostty19SessionLibraryModelC9overLimitSbvg+0xf0>
+10008b534: 90007888    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+10008b538: f9445909    	ldr	x9, [x8, #0x8b0]
+10008b53c: 91000529    	add	x9, x9, #0x1
+10008b540: f9045909    	str	x9, [x8, #0x8b0]
+10008b544: f0004ba0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+10008b548: 91058000    	add	x0, x0, #0x160
+10008b54c: 94225234    	bl	0x10091fe1c <_writev+0x10091fe1c>
+10008b550: aa0003f3    	mov	x19, x0
+10008b554: f0004ba0    	adrp	x0, 0x100a02000 <_$s7Ghostty19SessionLibraryModelC6FilterOs12IdentifiableAAMc+0x28>
+10008b558: 91062000    	add	x0, x0, #0x188
+10008b55c: 94225230    	bl	0x10091fe1c <_writev+0x10091fe1c>
+10008b560: aa0003f5    	mov	x21, x0
+10008b564: 910003e8    	mov	x8, sp
+10008b568: aa1403e0    	mov	x0, x20
+10008b56c: aa1303e1    	mov	x1, x19
+10008b570: aa1503e2    	mov	x2, x21
+10008b574: 942242dc    	bl	0x10091c0e4 <_writev+0x10091c0e4>
+10008b578: aa1303e0    	mov	x0, x19
+10008b57c: 94225273    	bl	0x10091ff48 <_writev+0x10091ff48>
+10008b580: aa1503e0    	mov	x0, x21
+10008b584: 94225271    	bl	0x10091ff48 <_writev+0x10091ff48>
+10008b588: f94003e0    	ldr	x0, [sp]
+10008b58c: f9400813    	ldr	x19, [x0, #0x10]
+10008b590: 942251c3    	bl	0x10091fc9c <_writev+0x10091fc9c>
+10008b594: f100167f    	cmp	x19, #0x5
+10008b598: 1a9f97e0    	cset	w0, hi
+10008b59c: 1400000a    	b	0x10008b5c4 <_$s7Ghostty19SessionLibraryModelC9overLimitSbvg+0x114>
+10008b5a0: 52800000    	mov	w0, #0x0                ; =0
+10008b5a4: 90007888    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+10008b5a8: f9445d09    	ldr	x9, [x8, #0x8b8]
+10008b5ac: 91000529    	add	x9, x9, #0x1
+10008b5b0: f9045d09    	str	x9, [x8, #0x8b8]
+10008b5b4: 90007888    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:$s7Ghostty18SecureInputOverlayV16_gradientOpacity33_0A04A935CBD1C6C276F4653F83826CDALL7SwiftUI5StateVy12CoreGraphics7CGFloatVGvpfi>
+10008b5b8: f943b909    	ldr	x9, [x8, #0x770]
+10008b5bc: 91000529    	add	x9, x9, #0x1
+10008b5c0: f903b909    	str	x9, [x8, #0x770]
+10008b5c4: a9437bfd    	ldp	x29, x30, [sp, #0x30]
+10008b5c8: a9424ff4    	ldp	x20, x19, [sp, #0x20]
+10008b5cc: a94157f6    	ldp	x22, x21, [sp, #0x10]
+10008b5d0: 910103ff    	add	sp, sp, #0x40
+10008b5d4: d65f03c0    	ret

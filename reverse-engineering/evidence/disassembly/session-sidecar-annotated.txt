@@ -1,0 +1,433 @@
+
+Ghostty Pro 中文版 1.6.0 修复版.app/Contents/MacOS/ghostty:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100079444 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?>:
+100079444: a9bb67fa    	stp	x26, x25, [sp, #-0x50]!
+100079448: a9015ff8    	stp	x24, x23, [sp, #0x10]
+10007944c: a90257f6    	stp	x22, x21, [sp, #0x20]
+100079450: a9034ff4    	stp	x20, x19, [sp, #0x30]
+100079454: a9047bfd    	stp	x29, x30, [sp, #0x40]
+100079458: 910103fd    	add	x29, sp, #0x40
+10007945c: d10143ff    	sub	sp, sp, #0x50
+100079460: aa0203f4    	mov	x20, x2
+100079464: aa0103f5    	mov	x21, x1
+100079468: aa0003f7    	mov	x23, x0
+10007946c: f0007d08    	adrp	x8, 0x10101c000 <__ZZN11spirv_cross11CompilerMSL21emit_custom_functionsEvE18function_name_tags+0x58>
+100079470: 910e6108    	add	x8, x8, #0x398
+100079474: f9400108    	ldr	x8, [x8]
+100079478: f81b83a8    	stur	x8, [x29, #-0x48]
+10007947c: d2800000    	mov	x0, #0x0                ; =0
+100079480: 942289f6    	bl	0x10091bc58 <type metadata accessor for Foundation.URL>
+100079484: aa0003f3    	mov	x19, x0
+100079488: f85f8019    	ldur	x25, [x0, #-0x8]
+10007948c: f9402328    	ldr	x8, [x25, #0x40]
+100079490: aa0803e9    	mov	x9, x8
+100079494: 90007630    	adrp	x16, 0x100f3d000 <_writev+0x100f3d000>
+100079498: f9425610    	ldr	x16, [x16, #0x4a8]
+10007949c: d63f0200    	blr	x16
+1000794a0: 910003e9    	mov	x9, sp
+1000794a4: 91003d0a    	add	x10, x8, #0xf
+1000794a8: 927ced4c    	and	x12, x10, #0xfffffffffffffff0
+1000794ac: cb0c0138    	sub	x24, x9, x12
+1000794b0: 9100031f    	mov	sp, x24
+1000794b4: aa0803e9    	mov	x9, x8
+1000794b8: 90007630    	adrp	x16, 0x100f3d000 <_writev+0x100f3d000>
+1000794bc: f9425610    	ldr	x16, [x16, #0x4a8]
+1000794c0: d63f0200    	blr	x16
+1000794c4: 910003e8    	mov	x8, sp
+1000794c8: cb0c0116    	sub	x22, x8, x12
+1000794cc: 910002df    	mov	sp, x22
+1000794d0: d0007908    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:variable initialization expression of Ghostty.SecureInputOverlay.(_gradientOpacity in _0A04A935CBD1C6C276F4653F83826CDA) : SwiftUI.State<CoreGraphics.CGFloat>>
+1000794d4: f9411509    	ldr	x9, [x8, #0x228]
+1000794d8: 91000529    	add	x9, x9, #0x1
+1000794dc: f9011509    	str	x9, [x8, #0x228]
+1000794e0: d0007908    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:variable initialization expression of Ghostty.SecureInputOverlay.(_gradientOpacity in _0A04A935CBD1C6C276F4653F83826CDA) : SwiftUI.State<CoreGraphics.CGFloat>>
+1000794e4: f9415509    	ldr	x9, [x8, #0x2a8]
+1000794e8: 91000529    	add	x9, x9, #0x1
+1000794ec: f9015509    	str	x9, [x8, #0x2a8]
+1000794f0: aa1803e8    	mov	x8, x24
+1000794f4: aa1503e0    	mov	x0, x21
+1000794f8: aa1403e1    	mov	x1, x20
+1000794fc: 52800022    	mov	w2, #0x1                ; =1
+100079500: aa1703f4    	mov	x20, x23
+100079504: 942289b7    	bl	0x10091bbe0 <Foundation.URL.appendingPathComponent(_: Swift.String, isDirectory: Swift.Bool) -> Foundation.URL>
+100079508: 90004648    	adrp	x8, 0x100941000 <_writev+0x100941000>
+10007950c: 9105c108    	add	x8, x8, #0x170
+100079510: d1008108    	sub	x8, x8, #0x20
+100079514: b2410101    	orr	x1, x8, #0x8000000000000000
+100079518: aa1603e8    	mov	x8, x22
+10007951c: d2800220    	mov	x0, #0x11               ; =17
+100079520: f2fa0000    	movk	x0, #0xd000, lsl #48
+100079524: aa1803f4    	mov	x20, x24
+100079528: 942289b1    	bl	0x10091bbec <Foundation.URL.appendingPathComponent(Swift.String) -> Foundation.URL>
+10007952c: f9400739    	ldr	x25, [x25, #0x8]
+100079530: aa1803e0    	mov	x0, x24
+100079534: aa1303e1    	mov	x1, x19
+100079538: d63f0320    	blr	x25
+10007953c: aa1603e0    	mov	x0, x22
+100079540: d2800001    	mov	x1, #0x0                ; =0
+100079544: d2800015    	mov	x21, #0x0               ; =0
+100079548: 942289ca    	bl	0x10091bc70 <Foundation.Data.init(contentsOf: __shared Foundation.URL, options: __C.NSDataReadingOptions) throws -> Foundation.Data>
+10007954c: b40003b5    	cbz	x21, 0x1000795c0 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x17c>
+100079550: aa1503e0    	mov	x0, x21
+100079554: 94229a11    	bl	0x10091fd98 <_swift_errorRelease>
+100079558: aa1603e0    	mov	x0, x22
+10007955c: aa1303e1    	mov	x1, x19
+100079560: d63f0320    	blr	x25
+100079564: d0007908    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:variable initialization expression of Ghostty.SecureInputOverlay.(_gradientOpacity in _0A04A935CBD1C6C276F4653F83826CDA) : SwiftUI.State<CoreGraphics.CGFloat>>
+100079568: f9411d09    	ldr	x9, [x8, #0x238]
+10007956c: 91000529    	add	x9, x9, #0x1
+100079570: f9011d09    	str	x9, [x8, #0x238]
+100079574: d2800000    	mov	x0, #0x0                ; =0
+100079578: d2800001    	mov	x1, #0x0                ; =0
+10007957c: d0007908    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:variable initialization expression of Ghostty.SecureInputOverlay.(_gradientOpacity in _0A04A935CBD1C6C276F4653F83826CDA) : SwiftUI.State<CoreGraphics.CGFloat>>
+100079580: f9411909    	ldr	x9, [x8, #0x230]
+100079584: 91000529    	add	x9, x9, #0x1
+100079588: f9011909    	str	x9, [x8, #0x230]
+10007958c: f85b83a8    	ldur	x8, [x29, #-0x48]
+100079590: f0007d09    	adrp	x9, 0x10101c000 <__ZZN11spirv_cross11CompilerMSL21emit_custom_functionsEvE18function_name_tags+0x58>
+100079594: 910e6129    	add	x9, x9, #0x398
+100079598: f9400129    	ldr	x9, [x9]
+10007959c: eb08013f    	cmp	x9, x8
+1000795a0: 54001181    	b.ne	0x1000797d0 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x38c>
+1000795a4: d10103bf    	sub	sp, x29, #0x40
+1000795a8: a9447bfd    	ldp	x29, x30, [sp, #0x40]
+1000795ac: a9434ff4    	ldp	x20, x19, [sp, #0x30]
+1000795b0: a94257f6    	ldp	x22, x21, [sp, #0x20]
+1000795b4: a9415ff8    	ldp	x24, x23, [sp, #0x10]
+1000795b8: a8c567fa    	ldp	x26, x25, [sp], #0x50
+1000795bc: d65f03c0    	ret
+1000795c0: aa0003f8    	mov	x24, x0
+1000795c4: aa0103f7    	mov	x23, x1
+1000795c8: b00078a8    	adrp	x8, 0x100f8e000 <_writev+0x100f8e000>
+1000795cc: f9456100    	ldr	x0, [x8, #0xac0]
+1000795d0: 94229869    	bl	0x10091f774 <_objc_opt_self>
+1000795d4: aa0003f4    	mov	x20, x0
+1000795d8: aa1803e0    	mov	x0, x24
+1000795dc: aa1703e1    	mov	x1, x23
+1000795e0: 942289b6    	bl	0x10091bcb8 <Foundation.Data._bridgeToObjectiveC() -> __C.NSData>
+1000795e4: aa0003f5    	mov	x21, x0
+1000795e8: f81903bf    	stur	xzr, [x29, #-0x70]
+1000795ec: d101c3a4    	sub	x4, x29, #0x70
+1000795f0: aa1403e0    	mov	x0, x20
+1000795f4: aa1503e2    	mov	x2, x21
+1000795f8: d2800003    	mov	x3, #0x0                ; =0
+1000795fc: 94229b39    	bl	0x1009202e0 <_objc_msgSend$JSONObjectWithData:options:error:>
+100079600: aa1d03fd    	mov	x29, x29
+100079604: 9422986b    	bl	0x10091f7b0 <_objc_retainAutoreleasedReturnValue>
+100079608: aa0003f4    	mov	x20, x0
+10007960c: aa1503e0    	mov	x0, x21
+100079610: 9422985f    	bl	0x10091f78c <_objc_release>
+100079614: f85903a0    	ldur	x0, [x29, #-0x70]
+100079618: b4000554    	cbz	x20, 0x1000796c0 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x27c>
+10007961c: 9422985f    	bl	0x10091f798 <_objc_retain>
+100079620: d101c3a8    	sub	x8, x29, #0x70
+100079624: aa1403e0    	mov	x0, x20
+100079628: 94229226    	bl	0x10091dec0 <Swift._bridgeAnyObjectToAny(Swift.AnyObject?) -> Any>
+10007962c: aa1403e0    	mov	x0, x20
+100079630: 94229a76    	bl	0x100920008 <_swift_unknownObjectRelease>
+100079634: 90007c80    	adrp	x0, 0x101009000 <lazy protocol witness table cache variable for type Ghostty.ColorizedGhosttyIcon and conformance Ghostty.ColorizedGhosttyIcon : Swift.Decodable in Ghostty>
+100079638: 9134a000    	add	x0, x0, #0xd28
+10007963c: 90004c41    	adrp	x1, 0x100a01000 <protocol conformance descriptor for Ghostty.QuickTerminalScreen : Swift.Hashable in Ghostty+0x3c>
+100079640: 9115a021    	add	x1, x1, #0x568
+100079644: 97fe2bae    	bl	0x1000044fc <___swift_instantiateConcreteTypeFromMangledNameV2>
+100079648: aa0003e3    	mov	x3, x0
+10007964c: f0007635    	adrp	x21, 0x100f40000 <_writev+0x100f40000>
+100079650: f944e6b5    	ldr	x21, [x21, #0x9c8]
+100079654: d10223a0    	sub	x0, x29, #0x88
+100079658: d101c3a1    	sub	x1, x29, #0x70
+10007965c: 910022a2    	add	x2, x21, #0x8
+100079660: 528000c4    	mov	w4, #0x6                ; =6
+100079664: 942299be    	bl	0x10091fd5c <_swift_dynamicCast>
+100079668: 360005a0    	tbz	w0, #0x0, 0x10007971c <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x2d8>
+10007966c: f85783b4    	ldur	x20, [x29, #-0x88]
+100079670: f9400a88    	ldr	x8, [x20, #0x10]
+100079674: b4000668    	cbz	x8, 0x100079740 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x2fc>
+100079678: aa1403e0    	mov	x0, x20
+10007967c: 9422998e    	bl	0x10091fcb4 <_swift_bridgeObjectRetain>
+100079680: d28eac60    	mov	x0, #0x7563             ; =30051
+100079684: f2ae8e60    	movk	x0, #0x7473, lsl #16
+100079688: f2cdade0    	movk	x0, #0x6d6f, lsl #32
+10007968c: f2ed2a80    	movk	x0, #0x6954, lsl #48
+100079690: d28d8e81    	mov	x1, #0x6c74             ; =27764
+100079694: f2a00ca1    	movk	x1, #0x65, lsl #16
+100079698: f2fd6001    	movk	x1, #0xeb00, lsl #48
+10007969c: 9405492b    	bl	0x1001cbb48 <generic specialization <Swift.String> of Swift.__RawDictionaryStorage.find<A where A: Swift.Hashable>(A) -> (bucket: Swift._HashTable.Bucket, found: Swift.Bool)>
+1000796a0: 360004c1    	tbz	w1, #0x0, 0x100079738 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x2f4>
+1000796a4: f9401e88    	ldr	x8, [x20, #0x38]
+1000796a8: 8b001500    	add	x0, x8, x0, lsl #5
+1000796ac: d101c3a1    	sub	x1, x29, #0x70
+1000796b0: 97fe7aeb    	bl	0x10001825c <outlined init with copy of Any>
+1000796b4: aa1403e0    	mov	x0, x20
+1000796b8: 94229979    	bl	0x10091fc9c <_swift_bridgeObjectRelease>
+1000796bc: 14000023    	b	0x100079748 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x304>
+1000796c0: aa0003f4    	mov	x20, x0
+1000796c4: 94229835    	bl	0x10091f798 <_objc_retain>
+1000796c8: aa0003f5    	mov	x21, x0
+1000796cc: aa1403e0    	mov	x0, x20
+1000796d0: 94228905    	bl	0x10091bae4 <Foundation._convertNSErrorToError(__C.NSError?) -> Swift.Error>
+1000796d4: aa0003f4    	mov	x20, x0
+1000796d8: aa1503e0    	mov	x0, x21
+1000796dc: 9422982c    	bl	0x10091f78c <_objc_release>
+1000796e0: d0007908    	adrp	x8, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:variable initialization expression of Ghostty.SecureInputOverlay.(_gradientOpacity in _0A04A935CBD1C6C276F4653F83826CDA) : SwiftUI.State<CoreGraphics.CGFloat>>
+1000796e4: f9412109    	ldr	x9, [x8, #0x240]
+1000796e8: 91000529    	add	x9, x9, #0x1
+1000796ec: f9012109    	str	x9, [x8, #0x240]
+1000796f0: aa1403f5    	mov	x21, x20
+1000796f4: 94229a75    	bl	0x1009200c8 <_swift_willThrow>
+1000796f8: aa1803e0    	mov	x0, x24
+1000796fc: aa1703e1    	mov	x1, x23
+100079700: 97fe2b2c    	bl	0x1000043b0 <outlined consume of Foundation.Data._Representation>
+100079704: aa1403e0    	mov	x0, x20
+100079708: 942299a4    	bl	0x10091fd98 <_swift_errorRelease>
+10007970c: aa1603e0    	mov	x0, x22
+100079710: aa1303e1    	mov	x1, x19
+100079714: d63f0320    	blr	x25
+100079718: 17ffff97    	b	0x100079574 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x130>
+10007971c: aa1603e0    	mov	x0, x22
+100079720: aa1303e1    	mov	x1, x19
+100079724: d63f0320    	blr	x25
+100079728: aa1803e0    	mov	x0, x24
+10007972c: aa1703e1    	mov	x1, x23
+100079730: 97fe2b20    	bl	0x1000043b0 <outlined consume of Foundation.Data._Representation>
+100079734: 17ffff90    	b	0x100079574 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x130>
+100079738: aa1403e0    	mov	x0, x20
+10007973c: 94229958    	bl	0x10091fc9c <_swift_bridgeObjectRelease>
+100079740: 6f00e400    	movi.2d	v0, #0000000000000000
+100079744: ad3c83a0    	stp	q0, q0, [x29, #-0x70]
+100079748: aa1803e0    	mov	x0, x24
+10007974c: aa1703e1    	mov	x1, x23
+100079750: 97fe2b18    	bl	0x1000043b0 <outlined consume of Foundation.Data._Representation>
+100079754: aa1403e0    	mov	x0, x20
+100079758: 94229951    	bl	0x10091fc9c <_swift_bridgeObjectRelease>
+10007975c: aa1603e0    	mov	x0, x22
+100079760: aa1303e1    	mov	x1, x19
+100079764: d63f0320    	blr	x25
+100079768: f85a83a8    	ldur	x8, [x29, #-0x58]
+10007976c: b4000248    	cbz	x8, 0x1000797b4 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x370>
+100079770: f0007623    	adrp	x3, 0x100f40000 <_writev+0x100f40000>
+100079774: f940b863    	ldr	x3, [x3, #0x170]
+100079778: d10223a0    	sub	x0, x29, #0x88
+10007977c: d101c3a1    	sub	x1, x29, #0x70
+100079780: 910022a2    	add	x2, x21, #0x8
+100079784: 528000c4    	mov	w4, #0x6                ; =6
+100079788: 94229975    	bl	0x10091fd5c <_swift_dynamicCast>
+10007978c: 3607ef40    	tbz	w0, #0x0, 0x100079574 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x130>
+100079790: a97787a0    	ldp	x0, x1, [x29, #-0x88]
+100079794: 9240bc08    	and	x8, x0, #0xffffffffffff
+100079798: d378ec29    	ubfx	x9, x1, #56, #4
+10007979c: f243003f    	tst	x1, #0x2000000000000000
+1000797a0: 9a890108    	csel	x8, x8, x9, eq
+1000797a4: b5ffef48    	cbnz	x8, 0x10007958c <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x148>
+1000797a8: aa0103e0    	mov	x0, x1
+1000797ac: 9422993c    	bl	0x10091fc9c <_swift_bridgeObjectRelease>
+1000797b0: 17ffff71    	b	0x100079574 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x130>
+1000797b4: b0007c61    	adrp	x1, 0x101006000 <_writev+0x101006000>
+1000797b8: 91336021    	add	x1, x1, #0xcd8
+1000797bc: b0004c22    	adrp	x2, 0x1009fe000 <protocol conformance descriptor for Ghostty.KeyEventMods : AppIntents.AppValue in Ghostty+0x28>
+1000797c0: 912c8042    	add	x2, x2, #0xb20
+1000797c4: d101c3a0    	sub	x0, x29, #0x70
+1000797c8: 97fe7b67    	bl	0x100018564 <merged outlined destroy of Any?>
+1000797cc: 17ffff6a    	b	0x100079574 <function signature specialization <Arg[2] = Dead> of static Ghostty.SessionLibraryScanner.readSidecarTitle(projectDir: Foundation.URL, sessionID: Swift.String) -> Swift.String?+0x130>
+1000797d0: 94228747    	bl	0x10091b4ec <___stack_chk_fail>
+
+00000001000797d4 <lazy protocol witness table accessor for type Foundation.Date and conformance Foundation.Date : Swift.Equatable in Foundation>:
+1000797d4: 90007c88    	adrp	x8, 0x101009000 <lazy protocol witness table cache variable for type Ghostty.ColorizedGhosttyIcon and conformance Ghostty.ColorizedGhosttyIcon : Swift.Decodable in Ghostty>
+1000797d8: f9469900    	ldr	x0, [x8, #0xd30]
+1000797dc: b4000040    	cbz	x0, 0x1000797e4 <lazy protocol witness table accessor for type Foundation.Date and conformance Foundation.Date : Swift.Equatable in Foundation+0x10>
+1000797e0: d65f03c0    	ret
+1000797e4: a9bf7bfd    	stp	x29, x30, [sp, #-0x10]!
+1000797e8: 910003fd    	mov	x29, sp
+1000797ec: 52801fe0    	mov	w0, #0xff               ; =255
+1000797f0: 94228971    	bl	0x10091bdb4 <type metadata accessor for Foundation.Date>
+1000797f4: aa0003e1    	mov	x1, x0
+1000797f8: f0007600    	adrp	x0, 0x100f3c000 <_writev+0x100f3c000>
+1000797fc: f947a800    	ldr	x0, [x0, #0xf50]
+100079800: 942299ab    	bl	0x10091feac <_swift_getWitnessTable>
+100079804: 90007c88    	adrp	x8, 0x101009000 <lazy protocol witness table cache variable for type Ghostty.ColorizedGhosttyIcon and conformance Ghostty.ColorizedGhosttyIcon : Swift.Decodable in Ghostty>
+100079808: 9134c108    	add	x8, x8, #0xd30
+10007980c: c89ffd00    	stlr	x0, [x8]
+100079810: a8c17bfd    	ldp	x29, x30, [sp], #0x10
+100079814: d65f03c0    	ret
+
+0000000100079818 <type metadata accessor for __C.NSFileHandle>:
+100079818: 90007c88    	adrp	x8, 0x101009000 <lazy protocol witness table cache variable for type Ghostty.ColorizedGhosttyIcon and conformance Ghostty.ColorizedGhosttyIcon : Swift.Decodable in Ghostty>
+10007981c: f9469d00    	ldr	x0, [x8, #0xd38]
+100079820: b4000060    	cbz	x0, 0x10007982c <type metadata accessor for __C.NSFileHandle+0x14>
+100079824: d2800001    	mov	x1, #0x0                ; =0
+100079828: d65f03c0    	ret
+10007982c: a9bf7bfd    	stp	x29, x30, [sp, #-0x10]!
+100079830: 910003fd    	mov	x29, sp
+100079834: b00078a8    	adrp	x8, 0x100f8e000 <_writev+0x100f8e000>
+100079838: f9449d00    	ldr	x0, [x8, #0x938]
+10007983c: 942297ce    	bl	0x10091f774 <_objc_opt_self>
+100079840: 94229980    	bl	0x10091fe40 <_swift_getObjCClassMetadata>
+100079844: 90007c88    	adrp	x8, 0x101009000 <lazy protocol witness table cache variable for type Ghostty.ColorizedGhosttyIcon and conformance Ghostty.ColorizedGhosttyIcon : Swift.Decodable in Ghostty>
+100079848: 9134e108    	add	x8, x8, #0xd38
+10007984c: c89ffd00    	stlr	x0, [x8]
+100079850: a8c17bfd    	ldp	x29, x30, [sp], #0x10
+100079854: d2800001    	mov	x1, #0x0                ; =0
+100079858: d65f03c0    	ret
+10007985c: a9be4ff4    	stp	x20, x19, [sp, #-0x20]!
+100079860: a9017bfd    	stp	x29, x30, [sp, #0x10]
+100079864: 910043fd    	add	x29, sp, #0x10
+100079868: aa0003f3    	mov	x19, x0
+10007986c: a9400028    	ldp	x8, x0, [x1]
+100079870: a9000268    	stp	x8, x0, [x19]
+100079874: 942299bb    	bl	0x10091ff60 <_swift_retain>
+100079878: aa1303e0    	mov	x0, x19
+10007987c: a9417bfd    	ldp	x29, x30, [sp, #0x10]
+100079880: a8c24ff4    	ldp	x20, x19, [sp], #0x20
+100079884: d65f03c0    	ret
+
+0000000100079888 <destroy value witness for Ghostty.Ghostty.Action.ColorChange>:
+100079888: f9400400    	ldr	x0, [x0, #0x8]
+10007988c: 142299af    	b	0x10091ff48 <_writev+0x10091ff48>
+
+0000000100079890 <assignWithCopy value witness for Ghostty.TitlebarTabsTahoeTerminalWindow.TitleItem>:
+100079890: a9be4ff4    	stp	x20, x19, [sp, #-0x20]!
+100079894: a9017bfd    	stp	x29, x30, [sp, #0x10]
+100079898: 910043fd    	add	x29, sp, #0x10
+10007989c: aa0003f3    	mov	x19, x0
+1000798a0: f9400028    	ldr	x8, [x1]
+1000798a4: f9000008    	str	x8, [x0]
+1000798a8: f9400420    	ldr	x0, [x1, #0x8]
+1000798ac: f9400674    	ldr	x20, [x19, #0x8]
+1000798b0: f9000660    	str	x0, [x19, #0x8]
+1000798b4: 942299ab    	bl	0x10091ff60 <_swift_retain>
+1000798b8: aa1403e0    	mov	x0, x20
+1000798bc: 942299a3    	bl	0x10091ff48 <_swift_release>
+1000798c0: aa1303e0    	mov	x0, x19
+1000798c4: a9417bfd    	ldp	x29, x30, [sp, #0x10]
+1000798c8: a8c24ff4    	ldp	x20, x19, [sp], #0x20
+1000798cc: d65f03c0    	ret
+
+00000001000798d0 <assignWithTake value witness for Ghostty.TitlebarTabsTahoeTerminalWindow.TitleItem>:
+1000798d0: a9be4ff4    	stp	x20, x19, [sp, #-0x20]!
+1000798d4: a9017bfd    	stp	x29, x30, [sp, #0x10]
+1000798d8: 910043fd    	add	x29, sp, #0x10
+1000798dc: aa0003f3    	mov	x19, x0
+1000798e0: a9402428    	ldp	x8, x9, [x1]
+1000798e4: f9400400    	ldr	x0, [x0, #0x8]
+1000798e8: a9002668    	stp	x8, x9, [x19]
+1000798ec: 94229997    	bl	0x10091ff48 <_swift_release>
+1000798f0: aa1303e0    	mov	x0, x19
+1000798f4: a9417bfd    	ldp	x29, x30, [sp, #0x10]
+1000798f8: a8c24ff4    	ldp	x20, x19, [sp], #0x20
+1000798fc: d65f03c0    	ret
+
+0000000100079900 <getEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange>:
+100079900: 34000101    	cbz	w1, 0x100079920 <getEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0x20>
+100079904: 37f80141    	tbnz	w1, #0x1f, 0x10007992c <getEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0x2c>
+100079908: f9400408    	ldr	x8, [x0, #0x8]
+10007990c: 12800009    	mov	w9, #-0x1               ; =-1
+100079910: eb09011f    	cmp	x8, x9
+100079914: 9a893108    	csel	x8, x8, x9, lo
+100079918: 11000500    	add	w0, w8, #0x1
+10007991c: d65f03c0    	ret
+100079920: 12800008    	mov	w8, #-0x1               ; =-1
+100079924: 11000500    	add	w0, w8, #0x1
+100079928: d65f03c0    	ret
+10007992c: 39404008    	ldrb	w8, [x0, #0x10]
+100079930: 34fffec8    	cbz	w8, 0x100079908 <getEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0x8>
+100079934: b9400008    	ldr	w8, [x0]
+100079938: 12b00009    	mov	w9, #0x7fffffff         ; =2147483647
+10007993c: 0b090108    	add	w8, w8, w9
+100079940: 11000500    	add	w0, w8, #0x1
+100079944: d65f03c0    	ret
+
+0000000100079948 <storeEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange>:
+100079948: 37f80081    	tbnz	w1, #0x1f, 0x100079958 <storeEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0x10>
+10007994c: 37f80122    	tbnz	w2, #0x1f, 0x100079970 <storeEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0x28>
+100079950: 35000141    	cbnz	w1, 0x100079978 <storeEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0x30>
+100079954: d65f03c0    	ret
+100079958: 12007828    	and	w8, w1, #0x7fffffff
+10007995c: a9007c08    	stp	x8, xzr, [x0]
+100079960: 36ffffa2    	tbz	w2, #0x1f, 0x100079954 <storeEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0xc>
+100079964: 52800028    	mov	w8, #0x1                ; =1
+100079968: 39004008    	strb	w8, [x0, #0x10]
+10007996c: d65f03c0    	ret
+100079970: 3900401f    	strb	wzr, [x0, #0x10]
+100079974: 34ffff01    	cbz	w1, 0x100079954 <storeEnumTagSinglePayload value witness for Ghostty.Ghostty.Action.ColorChange+0xc>
+100079978: 51000428    	sub	w8, w1, #0x1
+10007997c: f9000408    	str	x8, [x0, #0x8]
+100079980: d65f03c0    	ret
+
+0000000100079984 <type metadata accessor for Ghostty.SessionLibraryView>:
+100079984: 90007660    	adrp	x0, 0x100f45000 <_block_descriptor.32+0x30>
+100079988: 91348000    	add	x0, x0, #0xd20
+10007998c: d2800001    	mov	x1, #0x0                ; =0
+100079990: d65f03c0    	ret
+
+0000000100079994 <associated type witness table accessor for SwiftUI.View.Body : SwiftUI.View in Ghostty.SessionLibraryView : SwiftUI.View in Ghostty>:
+100079994: f0006fe1    	adrp	x1, 0x100e78000 <opaque type descriptor for <<opaque return type of Ghostty.TerminalCommandPaletteView.body : some>>>
+100079998: 9127f021    	add	x1, x1, #0x9fc
+10007999c: 52800022    	mov	w2, #0x1                ; =1
+1000799a0: 1422992e    	b	0x10091fe58 <_writev+0x10091fe58>
+
+00000001000799a4 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool>:
+1000799a4: d101c3ff    	sub	sp, sp, #0x70
+1000799a8: f9000bfc    	str	x28, [sp, #0x10]
+1000799ac: a9026bfb    	stp	x27, x26, [sp, #0x20]
+1000799b0: a90363f9    	stp	x25, x24, [sp, #0x30]
+1000799b4: a9045bf7    	stp	x23, x22, [sp, #0x40]
+1000799b8: a9054ff4    	stp	x20, x19, [sp, #0x50]
+1000799bc: a9067bfd    	stp	x29, x30, [sp, #0x60]
+1000799c0: 910183fd    	add	x29, sp, #0x60
+1000799c4: aa1503f3    	mov	x19, x21
+1000799c8: 9240bc08    	and	x8, x0, #0xffffffffffff
+1000799cc: d378ec29    	ubfx	x9, x1, #56, #4
+1000799d0: f243003f    	tst	x1, #0x2000000000000000
+1000799d4: 9a890117    	csel	x23, x8, x9, eq
+1000799d8: b4000817    	cbz	x23, 0x100079ad8 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x134>
+1000799dc: aa0103f4    	mov	x20, x1
+1000799e0: aa0003f6    	mov	x22, x0
+1000799e4: d2800018    	mov	x24, #0x0               ; =0
+1000799e8: 9240dc39    	and	x25, x1, #0xffffffffffffff
+1000799ec: 9240ec28    	and	x8, x1, #0xfffffffffffffff
+1000799f0: 9100811a    	add	x26, x8, #0x20
+1000799f4: 910003fc    	mov	x28, sp
+1000799f8: d000791b    	adrp	x27, 0x100f9b000 <___profc_/Users/mac/Desktop/Vibe coding/二开软件/ghostty-main/macos/Sources/Features/Secure Input/SecureInputOverlay.swift:variable initialization expression of Ghostty.SecureInputOverlay.(_gradientOpacity in _0A04A935CBD1C6C276F4653F83826CDA) : SwiftUI.State<CoreGraphics.CGFloat>>
+1000799fc: b7e000d4    	tbnz	x20, #0x3c, 0x100079a14 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x70>
+100079a00: b7e80154    	tbnz	x20, #0x3d, 0x100079a28 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x84>
+100079a04: aa1a03e0    	mov	x0, x26
+100079a08: b6e00616    	tbz	x22, #0x3c, 0x100079ac8 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x124>
+100079a0c: 8b180008    	add	x8, x0, x24
+100079a10: 14000008    	b	0x100079a30 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x8c>
+100079a14: d370bf00    	lsl	x0, x24, #16
+100079a18: aa1603e1    	mov	x1, x22
+100079a1c: aa1403e2    	mov	x2, x20
+100079a20: 94229179    	bl	0x10091e004 <Swift._StringGuts.foreignErrorCorrectedScalar(startingAt: Swift.String.Index) -> (Swift.Unicode.Scalar, scalarLength: Swift.Int)>
+100079a24: 14000007    	b	0x100079a40 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x9c>
+100079a28: a90067f6    	stp	x22, x25, [sp]
+100079a2c: 8b180388    	add	x8, x28, x24
+100079a30: 39c00109    	ldrsb	w9, [x8]
+100079a34: 12001d20    	and	w0, w9, #0xff
+100079a38: 37f80189    	tbnz	w9, #0x1f, 0x100079a68 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0xc4>
+100079a3c: 52800021    	mov	w1, #0x1                ; =1
+100079a40: f9415b68    	ldr	x8, [x27, #0x2b0]
+100079a44: 91000508    	add	x8, x8, #0x1
+100079a48: f9015b68    	str	x8, [x27, #0x2b0]
+100079a4c: 12196008    	and	w8, w0, #0xffffff80
+100079a50: 7102011f    	cmp	w8, #0x80
+100079a54: 1a9f17e0    	cset	w0, eq
+100079a58: 8b180038    	add	x24, x1, x24
+100079a5c: fa571300    	ccmp	x24, x23, #0x0, ne
+100079a60: 540003ea    	b.ge	0x100079adc <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x138>
+100079a64: 17ffffe6    	b	0x1000799fc <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x58>
+100079a68: 12800009    	mov	w9, #-0x1               ; =-1
+100079a6c: 4a006129    	eor	w9, w9, w0, lsl #24
+100079a70: 5ac01129    	clz	w9, w9
+100079a74: 7100093f    	cmp	w9, #0x2
+100079a78: 540000cc    	b.gt	0x100079a90 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0xec>
+100079a7c: 7100053f    	cmp	w9, #0x1
+100079a80: 54fffde0    	b.eq	0x100079a3c <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x98>
+100079a84: 531a1000    	ubfiz	w0, w0, #6, #5
+100079a88: 52800041    	mov	w1, #0x2                ; =2
+100079a8c: 17ffffed    	b	0x100079a40 <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x9c>
+100079a90: 71000d3f    	cmp	w9, #0x3
+100079a94: 540000c1    	b.ne	0x100079aac <function signature specialization <Arg[0] = [Closure Propagated : $s7Ghostty13SessionRecordV15nameLooksBrokenSbvgSbs7UnicodeO6ScalarVXEfU_, Argument Types : []> of generic specialization <Swift.String.UnicodeScalarView> of (extension in Swift):Swift.Sequence.contains(where: (A.Element) throws -> Swift.Bool) throws -> Swift.Bool+0x108>
+100079a98: 39400508    	ldrb	w8, [x8, #0x1]
+100079a9c: 53140c00    	ubfiz	w0, w0, #12, #4

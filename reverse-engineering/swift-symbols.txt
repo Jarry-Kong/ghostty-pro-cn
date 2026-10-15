@@ -1,0 +1,37 @@
+最新安装包中的重点 Swift 类型与接口线索
+
+Ghostty.SessionLibraryWindow
+Ghostty.SessionLibraryWindowController
+Ghostty.SessionLibraryModel
+Ghostty.SessionRecord
+Ghostty.SessionRow
+Ghostty.VoiceSettings
+Ghostty.VoiceSettingsWindowController
+Ghostty.VoiceHistoryEntry
+Ghostty.VoiceTranscriptWindow
+Ghostty.VoiceTranscriptWindowController
+Ghostty.SpeechPlayer
+Ghostty.SpeechSegment
+Ghostty.HistoryRow
+Ghostty.TabTitleEditor
+
+AppDelegate 入口：
+- showSessionLibrary
+- setupSessionLibraryMenu
+- showVoiceSettings
+- showVoiceTranscript
+
+SpeechPlayer 入口：
+- play(data:)
+- play(remote:)
+- pause()
+- resume()
+- togglePause()
+- seek(to:)
+- stop(notify:)
+- currentTime
+- duration
+- isActive
+- isPaused
+- rate
+- onProgress

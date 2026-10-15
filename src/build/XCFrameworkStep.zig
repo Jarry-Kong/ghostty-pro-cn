@@ -50,6 +50,9 @@ pub fn create(b: *std.Build, opts: Options) *XCFrameworkStep {
         const run = RunStep.create(b, b.fmt("xcframework {s}", .{opts.name}));
         run.has_side_effects = true;
         run.addArgs(&.{ "xcodebuild", "-create-xcframework" });
+        if (b.graph.env_map.get("GHOSTTY_XCODE_DEVELOPER_DIR")) |developer_dir| {
+            run.setEnvironmentVariable("DEVELOPER_DIR", developer_dir);
+        }
         for (opts.libraries) |lib| {
             run.addArg("-library");
             run.addFileArg(lib.library);

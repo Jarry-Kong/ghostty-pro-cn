@@ -744,7 +744,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20261013.4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -778,7 +778,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.6.0;
 				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchellh.ghostty.pro-cn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1197,7 +1197,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20261013.4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1230,7 +1230,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.6.0;
 				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchellh.ghostty.pro-cn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1422,21 +1422,17 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A51BFC252B30F1B700E92F16 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.1;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		A51BFC252B30F1B700E92F16 /* XCLocalSwiftPackageReference "Sparkle" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Dependencies/Sparkle;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		A51BFC262B30F1B800E92F16 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A51BFC252B30F1B700E92F16 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			package = A51BFC252B30F1B700E92F16 /* XCLocalSwiftPackageReference "Sparkle" */;
 			productName = Sparkle;
 		};
 /* End XCSwiftPackageProductDependency section */
